@@ -68,14 +68,39 @@ class Twig_TokenParser_Fragment extends Twig_TokenParser {
 } 
 ```
 
-To get your more 
-***
-
-
-* a
-* a
-* a
+The next step is to implement compiler directives for the node. These end in the Twig_Node_Fragment class.
 
 ```php
+class Twig_Node_Fragment extends Twig_Node { 
 
+    public function __construct(Twig_Node_Expression $name, Twig_Node_Expression $lifetime, Twig_Node_Expression $i18n, Twig_NodeInterface $body, $lineno, $tag = null) {                                                                                                                                   
+                                                                                                                                                      
+        parent::__construct(array('body' => $body, 'name' => $name, 'lifetime' => $lifetime, 'i18n' => $i18n), array(), $lineno, $tag);               
+    }                                                                                                                                                 
+                                                                                                                                                      
+    public function compile(Twig_Compiler $compiler) {                                                                                                
+                                                                                                                                                      
+        $compiler                                                                                                                                     
+                ->addDebugInfo($this)                                                                                                                 
+                ->write("if ( ! Fragment::load(")                                                                                                     
+                ->subcompile($this->getNode('name'))                                                                                                  
+                ->write(', ')                                                                                                                         
+                ->subcompile($this->getNode('lifetime'))                                                                                              
+                ->write(', ')                                                                                                                         
+                ->subcompile($this->getNode('i18n'))                                                                                                  
+                ->write(')) {')                                                                                                                       
+                ->indent();                                                                                                                           
+                                                                                                                                                      
+        $compiler                                                                                                                                     
+                ->subcompile($this->getNode('body'))                                                                                                  
+                ->write('Fragment::save();')                                                                                                          
+                ->outdent()                                                                                                                           
+                ->write('}');                                                                                                                         
+    }                                                                                                                                                 
+                                                                                                                                                      
+}  
 ```
+
+As you can see, the node is designed to generate PHP code. Twig does not interpret but rather compile down to PHP.
+
+Fragment is a great tool to optimize region in a view and is often a convenient way to speedup a web application. 
