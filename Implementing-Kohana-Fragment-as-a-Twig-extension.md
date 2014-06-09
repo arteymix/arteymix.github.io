@@ -29,7 +29,7 @@ Twig extension can define new TokenParser. A TokenParser is pretty much a class 
 
 Here, I will parse the `fragment` tag.
 
-```
+```jinja
 {% fragment "name" 15 true %}
 
     {# code here is cached for 15 seconds with the "name" key #}
