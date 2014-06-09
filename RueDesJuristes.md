@@ -23,8 +23,7 @@ It is also parsing recipient list using a nice regex, so you do not have to worr
 Kohana is HMVC, which means that you can request any of your page in the execution of any internal ```Request```. This is extremly convenient when testing an application, since it generally ends up being about requesting an endpoint and asserting the new states of your data.
 
 ```php
-
-public class HomeTest extends Unittest_TestCase {
+class HomeTest extends Unittest_TestCase {
 
     testIndex() {
 
@@ -39,7 +38,7 @@ public class HomeTest extends Unittest_TestCase {
 Even the mail module is fully testable using ```Mail_Sender_Mock```. It is a nice feature that simulates a mailing driver. It speeds up considerably the testing as you don't need to wait for Sendmail.
 
 ```php
-public class HomeTest extends Unittest_TestCase {
+class HomeTest extends Unittest_TestCase {
 
     public function testMail() {
 
@@ -82,3 +81,7 @@ class Unittest_TestCase {
 ```
 
 This is much better, in my opinion, than rely on ```Unittest_Database_TestCase``` for an ```ORM``` based application.
+
+It is also the first time I've experienced test coverage and honestly, what an amazing tool. It pretty much analyze your code while tests are running and outputs statistics about code complexity and percentage of line execution. Untested code is likely not to work, so having a good coverage is really important.
+
+This project shown me tools that made the development considerably faster and fun. Having not to debug was probably the best thing I've experienced so far.
