@@ -1,4 +1,4 @@
-# Implementing Kohana Fragment as a Twig extension
+## Implementing Kohana Fragment as a Twig extension
 
 I like the Kohana framework, but it's really missing a decent View engine. Sure, PHP-written views are nicely implemented, but that does not just get the job done on sufficiently big project.
 
