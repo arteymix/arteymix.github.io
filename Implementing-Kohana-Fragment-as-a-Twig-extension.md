@@ -9,7 +9,7 @@ Twig allows you to write views as simply as:
 
 {% block header %}
 
-    {{ parent() }}
+    {{ parent() }}
 
     Specific header content
 
