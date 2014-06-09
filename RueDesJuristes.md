@@ -6,6 +6,8 @@ It's done entirely in PHP using the Kohana framework.
 
 This was the first time I would be working with Twig. It was a really nice experience. Development was extremely fast and I would no lie saying it has never bugged me. I did unit testing with PHPUnit and Kohana Request, which is surprisingly efficient.
 
+## Improvements in the mail module
+
 The project also permit me to upgrade my mailing module. I could consider it as a really nice piece of software. It has a lovely closure syntax:
 
 ```php
@@ -81,6 +83,8 @@ class Unittest_TestCase {
 ```
 
 This is much better, in my opinion, than rely on ```Unittest_Database_TestCase``` for an ```ORM``` based application.
+
+## Coverage
 
 It is also the first time I've experienced test coverage and honestly, what an amazing tool. It pretty much analyze your code while tests are running and outputs statistics about code complexity and percentage of line execution. Untested code is likely not to work, so having a good coverage is really important.
 
