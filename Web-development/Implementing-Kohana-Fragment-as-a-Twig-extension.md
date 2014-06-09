@@ -1,3 +1,5 @@
+# Implementing Kohana Fragment as a Twig extension
+
 I like the Kohana framework, but it's really missing a decent View engine. Sure, PHP-written views are nicely implemented, but that does not just get the job done on sufficiently big project.
 
 I have discovered [Twig](twig.sensiolab.org), everything just became easy and efficient! I was in fact looking for an equivalent templating enging of [jinja2](jinja2.pocoo.org): Twig has the exact same syntax.
