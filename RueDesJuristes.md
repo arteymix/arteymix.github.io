@@ -1,5 +1,7 @@
 This project is a big one!
 
+It is a web application offering juridic services for french societies. It allow creation, modification and liquidation of these legal entities.
+
 It's done entirely in PHP using the Kohana framework.
 
 This was the first time I would be working with Twig. It was a really nice experience. Development was extremely fast and I would no lie saying it has never bugged me. I did unit testing with PHPUnit and Kohana Request, which is surprisingly efficient.
@@ -56,3 +58,27 @@ public class HomeTest extends Unittest_TestCase {
 ```
 
 The website implements a payment solution based on PayPal. I did some work on my PayPal module, which has become a simple external ```Request``` factory. It is much more convenient this way then how it was before, since it reuses the code from Kohana.
+
+I also improved the IPN implementation. It was a little buggy, since I never really used it, but now it is fully working and tested!
+
+## Fixtures
+
+Fixtures are really nicely done. I've overloaded Unittest_TestCase to add some on-the-fly ```ORM``` generators. For instance, if you need a user to test the login action:
+
+```php
+class Unittest_TestCase {
+
+    public function getUser() {
+
+        return ORM::factory('User')
+            ->values(array(
+                'username' => uniqid(),
+                'email' => uniqid() . '@ruedesjuristes.com',
+                'password' => 'abcd1234'
+            ))
+            ->add('roles', ORM::factory('Role', array('name' => 'login')));
+    }
+}
+```
+
+This is much better, in my opinion, than rely on ```Unittest_Database_TestCase``` for an ```ORM``` based application.
