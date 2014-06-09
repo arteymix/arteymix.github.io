@@ -6,7 +6,7 @@ This was the first time I would be working with Twig. It was a really nice exper
 
 The project also permit me to upgrade my mailing module. I could consider it as a really nice piece of software. It has a lovely closure syntax:
 
-```
+```php
 Mailer::factory()
     ->content_type('text/html; charset=utf-8')
     ->subject('Hey Foo!')
@@ -34,22 +34,25 @@ public class HomeTest extends Unittest_TestCase {
 }
 ```
 
-Even the mail module is fully testable using ```Mail_Sender_Mock```.
+Even the mail module is fully testable using ```Mail_Sender_Mock```. It is a nice feature that simulates a mailing driver. It speeds up considerably the testing as you don't need to wait for Sendmail.
 
 ```php
-
 public class HomeTest extends Unittest_TestCase {
 
-    testIndex() {
+    public function testMail() {
 
-        $response = Request::factory('')
+        $response = Request::factory('mail')
             ->method(Request::POST)
+            ->values(array('email' => 'foo@example.com'))
             ->execute();
 
         $mail = array_pop(Mail_Sender_Mock::$history);
 
         $this->assertEquals('text/html', $mail->content_type());
+        $this->assertContains('foo@example.com', $mail->to);
         $this->assertTag(array('tag' => 'h1', 'content' => 'Hello world!'), $mail->body());
         // ...
 }
 ```
+
+The website implements a payment solution based on PayPal. I did some work on my PayPal module, which has become a simple external ```Request``` factory. It is much more convenient this way then how it was before, since it reuses the code from Kohana.
