@@ -7,3 +7,5 @@ This blog is about web development. I will mostly talk about [the Kohana framewo
 I currently work for [Hète.ca](http://hete.ca) and on my workgroup, [Pittoresque](https://pittoresque.github.io). I do web development in both places.
 
 For those who care, my name is a slight modification of the goddess of hunt, Artemis.
+
+This blog is hosted using Gollum, a git based CMS written in Ruby.
