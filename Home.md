@@ -2,7 +2,7 @@
 
 *
 *
-* [RueDesJuristes](RueDesJuristes)
+* [RueDesJuristes](Web development/RueDesJuristes)
 
 I am a passionate web developer. I work with multiple tools and languages on web application.
 
