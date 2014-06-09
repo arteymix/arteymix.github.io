@@ -40,67 +40,101 @@ Twig extension can define new ```TokenParser```. A token parser is pretty much a
 The nodes within the `fragment` tag are captured by subparsing until the `endfragment` tag. Twig will delegate that work to appropriate token parsers.
 
 ```php
+<?php
+
+defined('SYSPATH') or die('No direct script access.');
+
+/**
+ * Parser for fragment/endfragment blocks.
+ *
+ * @package Twig
+ * @author  Guillaume Poirier-Morency <guillaumepoiriermorency@gmail.com>
+ */
 class Twig_TokenParser_Fragment extends Twig_TokenParser {
 
-   public function decideFragmentEnd(Twig_Token $token) {                                                                                            
-                                                                                                                                                      
-        return $token->test('endfragment');                                                                                                           
-    }                                                                                                                                                 
-                                                                                                                                                      
-    public function getTag() {                                                                                                                        
-                                                                                                                                                      
-        return 'fragment';                                                                                                                            
-    }                                                                                                                                                 
-                                                                                                                                                      
-    public function parse(Twig_Token $token) {                                                                                                        
-                                                                                                                                                      
-        $stream = $this->parser->getStream();                                                                                                         
-                                                                                                                                                      
-        $name = $this->parser->getExpressionParser()->parseExpression();                                                                              
-        $lifetime = $this->parser->getExpressionParser()->parseExpression();                                                                          
-        $i18n = $this->parser->getExpressionParser()->parseExpression();                                                                              
-                                                                                                                                                      
-        $stream->expect(Twig_Token::BLOCK_END_TYPE);                                                                                                  
-        $body = $this->parser->subparse(array($this, 'decideFragmentEnd'), true);                                                                     
-        $stream->expect(Twig_Token::BLOCK_END_TYPE);                                                                                                  
-                                                                                                                                                      
-        return new Twig_Node_Fragment($name, $lifetime, $i18n, $body, $token->getLine(), $this->getTag());                                            
-    }                                                                                                                                                 
-                                                                                                                                                      
-} 
+    /**
+     * @param \Twig_Token $token
+     *
+     * @return boolean
+     */
+    public function decideFragmentEnd(Twig_Token $token) {
+
+        return $token->test('endfragment');
+    }
+
+    public function getTag() {
+
+        return 'fragment';
+    }
+
+    public function parse(Twig_Token $token) {
+
+        $stream = $this->parser->getStream();
+
+        $name = $this->parser->getExpressionParser()->parseExpression();
+        $lifetime = $this->parser->getExpressionParser()->parseExpression();
+        $i18n = $this->parser->getExpressionParser()->parseExpression();
+
+        $stream->expect(Twig_Token::BLOCK_END_TYPE);
+        $body = $this->parser->subparse(array($this, 'decideFragmentEnd'), true);
+        $stream->expect(Twig_Token::BLOCK_END_TYPE);
+
+        return new Twig_Node_Fragment($name, $lifetime, $i18n, $body, $token->getLine(), $this->getTag());
+    }
+
+}
 ```
 
 The next step is to implement compiler directives for the node. These end in the Twig_Node_Fragment class.
 
 ```php
-class Twig_Node_Fragment extends Twig_Node { 
+<?php
 
-    public function __construct(Twig_Node_Expression $name, Twig_Node_Expression $lifetime, Twig_Node_Expression $i18n, Twig_NodeInterface $body, $lineno, $tag = null) {                                                                                                                                   
-                                                                                                                                                      
-        parent::__construct(array('body' => $body, 'name' => $name, 'lifetime' => $lifetime, 'i18n' => $i18n), array(), $lineno, $tag);               
-    }                                                                                                                                                 
-                                                                                                                                                      
-    public function compile(Twig_Compiler $compiler) {                                                                                                
-                                                                                                                                                      
-        $compiler                                                                                                                                     
-                ->addDebugInfo($this)                                                                                                                 
-                ->write("if ( ! Fragment::load(")                                                                                                     
-                ->subcompile($this->getNode('name'))                                                                                                  
-                ->write(', ')                                                                                                                         
-                ->subcompile($this->getNode('lifetime'))                                                                                              
-                ->write(', ')                                                                                                                         
-                ->subcompile($this->getNode('i18n'))                                                                                                  
-                ->write(')) {')                                                                                                                       
-                ->indent();                                                                                                                           
-                                                                                                                                                      
-        $compiler                                                                                                                                     
-                ->subcompile($this->getNode('body'))                                                                                                  
-                ->write('Fragment::save();')                                                                                                          
-                ->outdent()                                                                                                                           
-                ->write('}');                                                                                                                         
-    }                                                                                                                                                 
-                                                                                                                                                      
-}  
+defined('SYSPATH') or die('No direct script access.');
+
+/**
+ * Cache twig node.
+ *
+ * @author Guillaume Poirier-Morency <guillaumepoiriermorency@gmail.com>
+ */
+class Twig_Node_Fragment extends Twig_Node {
+
+    /**
+     * 
+     * @param type $name
+     * @param type $lifetime
+     * @param type $i18n
+     * @param \Twig_NodeInterface $body
+     * @param type $lineno
+     * @param type $tag
+     */
+    public function __construct(Twig_Node_Expression $name, Twig_Node_Expression $lifetime, Twig_Node_Expression $i18n, Twig_NodeInterface $body, $lineno, $tag = null) {
+
+        parent::__construct(array('body' => $body, 'name' => $name, 'lifetime' => $lifetime, 'i18n' => $i18n), array(), $lineno, $tag);
+    }
+
+    public function compile(Twig_Compiler $compiler) {
+
+        $compiler
+                ->addDebugInfo($this)
+                ->write("if ( ! Fragment::load(")
+                ->subcompile($this->getNode('name'))
+                ->write(', ')
+                ->subcompile($this->getNode('lifetime'))
+                ->write(', ')
+                ->subcompile($this->getNode('i18n'))
+                ->write(')) {')
+                ->indent();
+
+        $compiler
+                ->subcompile($this->getNode('body'))
+                ->write('Fragment::save();')
+                ->outdent()
+                ->write('}');
+    }
+
+}
+
 ```
 
 So far, I only need to find out how optional arguments for tag are implemented. It is not really convenient to specify every argument of ```Fragment::load``` every time it is used.
