@@ -25,9 +25,7 @@ return array(
 );
 ```
 
-Twig extension can define new TokenParser. A TokenParser is pretty much a class that is instantiated and called whenever a certain tag it parses is found in the document.
-
-Here, I will parse the `fragment` tag.
+Here, the `fragment` tag will be parsed until a `endfragment` tag is detected.
 
 ```jinja
 {% fragment "name" 15 true %}
@@ -36,6 +34,10 @@ Here, I will parse the `fragment` tag.
 
 {% endfragment %}
 ```
+
+Twig extension can define new ```TokenParser```. A token parser is pretty much a class that is instantiated and called whenever a certain tag it parses is found in the document.
+
+The nodes within the `fragment` tag are captured by subparsing until the `endfragment` tag. Twig will delegate that work to appropriate token parsers.
 
 ```php
 class Twig_TokenParser_Fragment extends Twig_TokenParser {
