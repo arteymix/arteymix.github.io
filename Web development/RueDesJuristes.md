@@ -29,7 +29,7 @@ Kohana is HMVC, which means that you can request any of your page in the executi
 ```php
 class HomeTest extends Unittest_TestCase {
 
-    testIndex() {
+    public function testIndex() {
 
         $response = Request::factory('')->execute();
 
