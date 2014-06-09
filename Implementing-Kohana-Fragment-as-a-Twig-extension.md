@@ -103,6 +103,8 @@ class Twig_Node_Fragment extends Twig_Node {
 }  
 ```
 
+So far, I only need to find out how optional arguments for tag are implemented. It is not really convenient to specify every argument of ```Fragment::load``` every time it is used.
+
 As you can see, the node is designed to generate PHP code. Twig does not interpret but rather compile down to PHP.
 
 Fragment is a great tool to optimize region in a view and is often a convenient way to speedup a web application. 
