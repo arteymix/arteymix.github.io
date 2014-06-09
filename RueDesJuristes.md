@@ -6,9 +6,11 @@ It's done entirely in PHP using the Kohana framework.
 
 This was the first time I would be working with Twig. It was a really nice experience. Development was extremely fast and I would no lie saying it has never bugged me. I did unit testing with PHPUnit and Kohana Request, which is surprisingly efficient.
 
+[JSON](http://json.org) really saved me here! The website collects an humongous amount of data to proceed the legal formalities. User have to submit forms with around 60 inputs. All the data are serialized once using ```json_encode```. I used the ```ORM::filters``` feature to serialize the data on need.
+
 ## Improvements in the mail module
 
-The project also permit me to upgrade my mailing module. I could consider it as a really nice piece of software. It has a lovely closure syntax:
+The project also permit me to upgrade [my mailing module](https://github.com/Hete/kohana-mail). I could consider it as a really nice piece of software. It has a lovely closure syntax:
 
 ```php
 Mailer::factory()
