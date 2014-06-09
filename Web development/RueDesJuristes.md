@@ -1,4 +1,4 @@
-This project is a big one!
+## RueDesJuristes
 
 It is a web application offering juridic services for french societies. It allow creation, modification and liquidation of these legal entities.
 
