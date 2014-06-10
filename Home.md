@@ -4,7 +4,7 @@
 
 ## Latest articles
 
-* [Writing a Twig Extension](Web development/Writing a Twig Extension for Kohana Fragment)
+* [Implementing Kohana Fragment as a Twig extension](Web development/Implementing Kohana Fragment as a Twig extension)
 * [RueDesJuristes](Web development/RueDesJuristes)
 
 I am a passionate web developer. I work with multiple tools and languages on web application.
