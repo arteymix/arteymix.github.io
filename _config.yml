@@ -1,0 +1,9 @@
+name: A day in a pile of work
+url: http://arteymix.github.io
+description: My personal web development blog
+
+permalink: /:year/:month/:day/:title/
+paginate: 10
+highlight: true
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
