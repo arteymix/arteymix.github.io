@@ -1,5 +1,7 @@
 # Arteymix's  blog
 
+![My profile picture on Gravatar.](https://gravatar.com?s=qweqweqeqwe)
+
 *
 *
 * [RueDesJuristes](Web development/RueDesJuristes)
