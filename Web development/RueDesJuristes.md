@@ -1,5 +1,7 @@
 ## RueDesJuristes
 
+![RueDesJuristes logo](http://ruedesjuristes.com/assets/img/logo-square.png)
+
 It is a web application offering juridic services for french societies. It allow
 creation, modification and liquidation of these legal entities.
 
