@@ -33,8 +33,8 @@ is something to consider only if you reach the memory limit.
 
 [JSON](http://json.org) really saved me here! The website collects an big amount 
 of data to proceed the legal formalities. User have to submit forms with around 
-60 inputs. All the data are serialized once using ```json_encode```. I used the 
-```ORM::filters``` feature to serialize the data on need.
+60 inputs. All the data are serialized once using ```json_encode```. I used the ```ORM::filters``` 
+feature to serialize the data on need.
 
 Form can also be submitted in ajax. To do so, you may use ```Request::is_ajax```
 and disable template rendering by setting ```Request::$auto_render``` to ```FALSE```. 
