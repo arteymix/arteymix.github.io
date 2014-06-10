@@ -2,8 +2,9 @@
 
 ![My profile picture on Gravatar.](https://gravatar.com?s=qweqweqeqwe)
 
-*
-*
+## Latest articles
+
+* [Writing a Twig Extension](Web development/Writing a Twig Extension for Kohana Fragment)
 * [RueDesJuristes](Web development/RueDesJuristes)
 
 I am a passionate web developer. I work with multiple tools and languages on web application.
