@@ -3,7 +3,10 @@ title: RueDesJuristes
 layout: post
 ---
 
-![RueDesJuristes logo](//ruedesjuristes.com/assets/img/logo-small.png)
+<figure class="thumbnail">
+    <img class="img-responsive" src="/assets/img/ruedesjuristes.png"/>
+    <figcaption class="caption">How the website actually look like.</figcaption>
+</figure>
 
 It is a web application offering juridic services for french societies. It allow
 creation, modification and liquidation of these legal entities. Its website can

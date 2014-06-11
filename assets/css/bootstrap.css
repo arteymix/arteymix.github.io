@@ -320,8 +320,8 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #002a35;
-  border: 1px solid #dddddd;
+  background-color: #073642;
+  border: 1px solid #2d6472;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -4400,8 +4400,8 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #002a35;
-  border: 1px solid #dddddd;
+  background-color: #073642;
+  border: 1px solid #2d6472;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
