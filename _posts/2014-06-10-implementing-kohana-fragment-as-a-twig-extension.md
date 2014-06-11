@@ -7,9 +7,9 @@ I like the Kohana framework, but it's really missing a decent View engine.
 Sure, PHP-written views are nicely implemented, but that does not just get the 
 job done on sufficiently big project.
 
-I have discovered [Twig](twig.sensiolab.org), everything just became easy and 
-efficient! I was in fact looking for an equivalent templating enging of 
-[jinja2](jinja2.pocoo.org): Twig has the exact same syntax.
+The moment I have discovered [Twig](http://twig.sensiolab.org), everything just 
+became easy and efficient! I was in fact looking for an equivalent templating 
+engine of [jinja2](http://jinja2.pocoo.org): Twig has the exact same syntax.
 
 Twig allows you to write views as simply as:
 
@@ -32,9 +32,21 @@ it has more: filters, embedding, auto-escaping and so on...
 
 Kohana has a [very nice extension for Twig written by tommcdo](https://github.com/tommcdo/kohana-twig). 
 The extension is great because it simply extends the ```View``` class. It is 
-completely transparent to the original View engine.
+completely transparent to the original view engine.
 
-I did some changes like passing View global variables and Twig test support.
+I did some changes like passing ```View``` global variables and supporting Twig 
+tests.
+
+A test in Twig is a statement using the ```is``` keyword. You may check if a 
+value is null just by writting:
+
+{% highlight jinja linenos %}
+{% raw %}
+{% if var is null %}
+    {{ var }}
+{% endif %}
+{% endraw %}
+{% endhighlight %}
 
 Although, I couldn't find a decent caching solution that would bind to Kohana 
 nicely. I did a little of research and I dig to find out I could just extend the 
@@ -48,7 +60,10 @@ I started by adding an ```extensions``` field in the module configuration:
 {% highlight php linenos %}
 <?php
 
+defined('SYSPATH') or die('No direct script access.');
+
 return array(
+
     /**
      * Twig Extensions
      */
