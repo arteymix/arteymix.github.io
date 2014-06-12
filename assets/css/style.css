@@ -21,8 +21,8 @@
 .highlight{
     border-radius: 3px 3px 3px 3px;
     overflow: auto;
-    padding: 6px 10px;
-    margin-bottom: 10px;    
+    padding: 4px;
+    margin: 0 0 10px;
     background-color: #073642 !important;
     color: #93a1a1;
     border: 1px solid #2d6472;
