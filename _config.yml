@@ -1,5 +1,6 @@
 name: A day in a pile of work
 url: http://arteymix.github.io
+author: Guillaume Poirier-Morency <guillaumepoiriermorency@gmail.com>
 description: My personal web development blog
 
 permalink: /:year/:month/:day/:title/

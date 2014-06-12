@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Implementing Kohana Fragment as a Twig extension
 ---
 
 I like the Kohana framework, but it's really missing a decent View engine. 

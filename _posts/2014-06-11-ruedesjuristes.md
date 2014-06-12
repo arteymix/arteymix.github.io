@@ -1,6 +1,7 @@
 ---
 title: RueDesJuristes
 description: Web application offering juridic services for french societies.
+keywords: ['paypal', 'ruedesjuristes', 'web', 'php', 'kohana']
 layout: post
 ---
 
@@ -20,20 +21,31 @@ experience. Development was extremely fast and I would no lie saying it has
 never bugged me. I did unit testing with PHPUnit and Kohana Request, which is 
 surprisingly efficient.
 
-I've been a little frustrated with errors handling when Twig syntax was wrong. 
-When you get an error in a parsing tree and your debugger print humongous 
-structure recursively, you get out of memory quite quickly. To avoid this, you 
-may reduce the depth of recursion in ```Debug::dump``` by overloading it.
+Just to say, [Twig is a template engine produced by SensioLabs](http://twig.sensiolabs.org). 
+It was originally built for the Symphony framework, but it can be combined with 
+any of your favorite tool. Since I use the Kohana framework, you should look for 
+[this Twig module written by tommcdo](https://github.com/tommcdo/kohana-twig).
+
+I've been a little frustrated with errors handling when I had some mistakes in 
+my Twig syntax. When you get an error in a parsing tree and your debugger print 
+humongous structure recursively, you get out of memory quite quickly. To avoid 
+this, you may reduce the depth of recursion in ```Debug::dump``` by overloading
+it.
+
+The great thing about Kohana is its cascading file system (CFS), which allow us
+to override its default behiaviours.
 
 {% highlight php linenos %}
 <?php
+
+defined('SYSPATH') or die('No direct script access.');
 
 class Debug extends Kohana_Debug {
 
     /**
      * Reducing the default $depth from 10 to 2 to avoid reaching memory limit.
      */
-    public static void dump($value, $length = 128, $depth = 2) {
+    public static function dump($value, $length = 128, $depth = 2) {
         
         return parent::dump($value, $length, $depth);
     }
@@ -106,6 +118,8 @@ endpoint and asserting the new states of your data.
 {% highlight php linenos %}
 <?php
 
+defined('SYSPATH') or die('No direct script access.');
+
 class HomeTest extends Unittest_TestCase {
 
     public function testIndex() {
@@ -125,6 +139,8 @@ testing as you don't need to wait for Sendmail.
 {% highlight php linenos %}
 <?php
 
+defined('SYSPATH') or die('No direct script access.');
+
 class HomeTest extends Unittest_TestCase {
 
     public function testMail() {
@@ -143,10 +159,10 @@ class HomeTest extends Unittest_TestCase {
 }
 {% endhighlight %}
 
-The website implements a payment solution based on PayPal. I did some work on my 
-PayPal module, which has become a simple external ```Request``` factory. It is 
-much more convenient this way then how it was before, since it reuses the code 
-from Kohana.
+The website implements a payment solution based on PayPal. I did some work on 
+[a PayPal module](https://github.com/Hete/kohana-paypal) I have written, which 
+has become a simple external ```Request``` factory. It is much more convenient 
+this way then how it was before, since it reuses the code from Kohana.
 
 I also improved the IPN implementation. It was a little buggy, since I never 
 really used it, but now it is fully working and tested!
@@ -159,6 +175,8 @@ login action:
 
 {% highlight php linenos %}
 <?php
+
+defined('SYSPATH') or die('No direct script access.');
 
 class Unittest_TestCase extends Kohana_Unittest_TestCase {
 
