@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-# About
+# {{ page.title }}
 
 I am a passionate web developer. I work with multiple tools and languages on web 
 application.

@@ -1,5 +1,6 @@
 ---
 title: RueDesJuristes
+description: Web application offering juridic services for french societies.
 layout: post
 ---
 

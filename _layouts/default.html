@@ -31,8 +31,11 @@
       <header class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-3">
-                <h1><a href="/">{{ site.name }}</a></h1>
+                <h1>
+                    <a href="/">{{ site.name }}</a>
+                </h1>
                 <p>{{ site.description }}</p>
+                <hr/>
             </div>
         </div>
       </header>
@@ -66,9 +69,11 @@
 
           <footer class="text-center">
             <p class="copyright">
-                Copyright &copy; {{ site.time | date: '%Y' }} {{ site.name }}.</br>
-                Powered by <a href="http://jekyllrb.com">Jekyll</a> and
-                colored with <a href="http://ethanschoonover.com/solarized">Solarized</a>.
+                <small>
+                    Copyright &copy; {{ site.time | date: '%Y' }}, {{ site.name }}.</br>
+                    Powered by <a href="http://jekyllrb.com">Jekyll</a> and
+                    colored with <a href="http://ethanschoonover.com/solarized">Solarized</a>.
+                </small>
             </p>
           </footer>
 

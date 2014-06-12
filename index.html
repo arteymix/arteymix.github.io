@@ -7,14 +7,15 @@ layout: default
 
     <article class="post">
 
-        {% if post.external-url %}
-            <h1>
+        <h2>
+            {% if post.external-url %}
                 <a href="{{ post.external-url }}">{{ post.title }}</a>
-                <a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
-            </h1>
-        {% else %}
-            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        {% endif %}
+                <a class="anchor" href="{{ post.url }}"><i class="glyphicon glyphicon-anchor"></i></a>
+            {% else %}
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            {% endif %}
+            <small>{{ post.date | date: "%b %d, %Y"}}</small>
+        </h2>
 
         <div>{{ post.content }}</div>
 
