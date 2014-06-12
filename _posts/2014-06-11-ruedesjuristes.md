@@ -1,8 +1,8 @@
 ---
+layout: post
 title: RueDesJuristes
 description: Web application offering juridic services for french societies.
-keywords: ['paypal', 'ruedesjuristes', 'web', 'php', 'kohana']
-layout: post
+keywords: paypal, ruedesjuristes, web, php, kohana, french society
 ---
 
 <figure class="thumbnail">

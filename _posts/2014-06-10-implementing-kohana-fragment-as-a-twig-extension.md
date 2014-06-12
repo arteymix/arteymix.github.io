@@ -1,5 +1,8 @@
 ---
 layout: post
+title: Implementing Kohana Fragment as a Twig extension
+description: Writting a Twig extension that supports Kohana Fragment.
+keywords: kohana, caching, optimization, fragment, twig extension
 ---
 
 I like the Kohana framework, but it's really missing a decent View engine. 
