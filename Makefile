@@ -1,13 +1,11 @@
-CSS_FILES = $(shell find assets/css -type f -name *.css -not -name *.min.css)
-JS_FILES = $(shell find assets/js -type f -name *.js -not -name *.min.js)
+CSS=$(shell find assets/css -type f -name *.css -not -name *.min.css)
+JS=$(shell find assets/js -type f -name *.js -not -name *.min.js)
 
-all: minify
+all: $(CSS) $(JS)
 	jekyll build
 
-minify: $(CSS_FILES) $(JS_FILES)
+%.min.css: %.css
+	cssmin $< > $@
 
-$(CSS_FILES):
-	cssmin $@ > $(basename $@).min.css
-
-$(JS_FILES):
-	uglifyjs $@ > $(basename $@).min.js
+%.min.js: %.js
+	uglifyjs $< > $@
