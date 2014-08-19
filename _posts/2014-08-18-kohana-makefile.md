@@ -5,10 +5,12 @@ category: kohana
 tags: kohana
 layout: post
 keywords: selinux, makefile, make, kohana
+external-url: https://gist.github.com/arteymix/4a162dd185ac0e4f781e
 ---
 
-I have just released my sample Kohana Makefile. It has useful recipes for 
-minification, testing, setting permissions and [SELinux](http://wikipedia.com/wiki/SELinux) contexts.
+I have just released [my sample Kohana Makefile](https://gist.github.com/arteymix/4a162dd185ac0e4f781e). 
+It has useful recipes for minification, testing, setting permissions and 
+[SELinux](http://wikipedia.com/wiki/SELinux) contexts.
 
 Clone it
 {% highlight bash %}
