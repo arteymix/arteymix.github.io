@@ -4,17 +4,17 @@ keywords: php, kohana, twig
 ---
 <article class="post">
 
-    <h2>
-        {% if page.external-url %}
-                <a href="{{ page.external-url }}">{{ page.title }}</a> 
-                <a class="anchor" href="{{ page.url }}"><i class="glyphicon glyphicon-leaf"></i></a>
-        {% else %}
-                <a href="{{ page.url }}">{{ page.title }}</a>
-        {% endif %}
-    </h2>
+  <h2>
+    {% if page.external-url %}
+      <a href="{{ page.external-url }}">{{ page.title }}</a>
+      <a class="anchor" href="{{ page.url }}"><i class="glyphicon glyphicon-leaf"></i></a>
+    {% else %}
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+  </h2>
 
-    <div>{{ content }}</div>
+  <div>{{ content }}</div>
 
-    <p><small>Posted on <span>{{ page.date | date: "%b %d, %Y" }}</span>.</small></p>
+  <p><small>Posted on <span>{{ page.date | date: "%b %d, %Y" }}</span>.</small></p>
 
 </article>

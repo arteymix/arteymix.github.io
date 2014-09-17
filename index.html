@@ -5,45 +5,44 @@ layout: default
 
 {% for post in paginator.posts %}
 
-    <article class="post">
+  <article class="post">
 
-        <h2>
-            {% if post.external-url %}
-                <a href="{{ post.external-url }}">{{ post.title }}</a>
-                <a class="anchor" href="{{ post.url }}"><i class="glyphicon glyphicon-leaf"></i></a>
-            {% else %}
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            {% endif %}
-            <small>{{ post.date | date: "%b %d, %Y"}}</small>
-        </h2>
+    <h2>
+      {% if post.external-url %}
+        <a href="{{ post.external-url }}">{{ post.title }}</a>
+        <a class="anchor" href="{{ post.url }}"><i class="glyphicon glyphicon-leaf"></i></a>
+      {% else %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      {% endif %}
+      <small>{{ post.date | date: "%b %d, %Y"}}</small>
+    </h2>
 
-        <div>{{ post.content }}</div>
+    <div>{{ post.content }}</div>
 
-    </article>
+  </article>
 
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
 
-    <span class="pages">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <span class="pages">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
-    <ul class="pagination">
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <li><a class="prev left" href="/">&larr; Newer</a></li>
+      {% else %}
+        <li><a class="prev left" href="/page{{paginator.previous_page}}/">&larr; Newer</a></li>
+      {% endif %}
+    {% else %}
+      <li><span class="nope left">&larr; Newer</span></li>
+    {% endif %}
 
-        {% if paginator.previous_page %}
-            {% if paginator.page == 2 %}
-                <li><a class="prev left" href="/">&larr; Newer</a></li>
-            {% else %}
-                <li><a class="prev left" href="/page{{paginator.previous_page}}/">&larr; Newer</a></li>
-            {% endif %}
-        {% else %}
-            <li><span class="nope left">&larr; Newer</span></li>
-        {% endif %}
+    {% if paginator.next_page %}
+      <li><a class="next right" href="/page{{paginator.next_page}}/">Older &rarr;</a></li>
+    {% else %}
+      <li><span class="nope right">Older &rarr;</span></li>
+    {% endif %}
+  </ul>
 
-        {% if paginator.next_page %}
-            <li><a class="next right" href="/page{{paginator.next_page}}/">Older &rarr;</a></li>
-        {% else %}
-            <li><span class="nope right">Older &rarr;</span></li>
-        {% endif %}
-
-    </ul>
 {% endif %}

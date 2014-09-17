@@ -1,90 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
+  <head>
 
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        <meta name="description" content="{{ page.description }}"/>
-        <meta name="keywords" content="{{ page.keywords }}"/>
-        <meta name="author" content="{{ site.author }}"/>
-        <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="viewport" content="width=device-width">
 
-        <link href="/assets/img/glyphicon-leaf.png" rel="shortcut icon" type="image/png"/>
+    <link href="/assets/img/glyphicon-leaf.png" rel="shortcut icon">
 
-        <link href="/assets/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet"/>
-        <link href="/assets/css/style.min.css" rel="stylesheet"/>
-        <link href="/assets/css/solarized-dark.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="/assets/css/solarized-dark.min.css">
 
-    </head>
+  </head>
 
-    <body>
-        
-          <header class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-3">
-                        <h1>
-                            <a href="/">{{ site.name }}</a>
-                        </h1>
-                        <p>{{ site.description }}</p>
-                        <hr/>
-                    </div>
-                </div>
-          </header>
+  <body>
 
-          <div id="page" class="container">
+    <header class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-3">
+            <h1>
+              <a href="/">{{ site.name }}</a>
+            </h1>
+            <p>{{ site.description }}</p>
+            <hr/>
+          </div>
+        </div>
+    </header>
 
-            <div class="row">
+    <div id="page" class="container">
 
-                <div id="sidebar" class="col-md-2 col-md-offset-1">
+      <div class="row">
 
-                <p class="text-right">
-                  <img class="img-circle" src="https://gravatar.com/avatar/f74142e4e76004b644fc0538350e1b6b?s=128" alt="My profile picture on Gravatar."/>
-                </p>
+        <div id="sidebar" class="col-md-2 col-md-offset-1">
 
-                  <nav>
-                    <ul class="list-unstyled text-right">
-                      <li><a href="/">Home</a></li>
-                      <li><a href="/archives">Archive</a></li>
-                      <li><a href="/about">About</a></li>
-                      <li><a href="https://twitter.com/arteymix">Twitter</a></li>
-                      <li><a href="mailto:guillaumepoiriermorency@gmail.com">Email</a></li>
-                      <li><a href="/feed.xml">RSS Feed</a></li>
-                    </ul>
-                  </nav>
+        <p class="text-right">
+          <img class="img-circle" src="https://gravatar.com/avatar/f74142e4e76004b644fc0538350e1b6b?s=128" alt="My profile picture on Gravatar."/>
+        </p>
 
-                </div>
+        <nav>
+          <ul class="list-unstyled text-right">
+            <li><a href="/">Home</a></li>
+            <li><a href="/archives">Archive</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="https://github.com/arteymix">GitHub</a></li>
+            <li><a href="https://twitter.com/@arteymix">Twitter</a></li>
+            <li><a href="mailto:guillaumepoiriermorency@gmail.com">Email</a></li>
+            <li><a href="/feed.xml">RSS Feed</a></li>
+          </ul>
+        </nav>
 
-                <div id="content" class="col-md-8">
-                    
-                  {{ content }}
-
-                  <hr/>
-
-                  <footer class="text-center">
-                    <p class="copyright">
-                        <small>
-                            Copyright &copy; {{ site.time | date: '%Y' }}, {{ site.name }}.<br/>
-                            Powered by <a href="http://jekyllrb.com">Jekyll</a> and
-                            colored with <a href="http://ethanschoonover.com/solarized">Solarized</a>.
-                        </small>
-                    </p>
-                  </footer>
-
-                </div>
-
-            </div>
         </div>
 
-        <script type="application/javascript">
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-51785497-1', 'arteymix.github.io');
-            ga('send', 'pageview');
-        </script>
+        <div id="content" class="col-md-8">
 
-    </body>
+          {{ content }}
+
+          <hr/>
+
+          <footer class="text-center">
+            <p class="copyright">
+              <small>
+                Copyright &copy; {{ site.time | date: '%Y' }}, {{ site.name }}.<br/>
+                Powered by <a href="http://jekyllrb.com">Jekyll</a> and
+                colored with <a href="http://ethanschoonover.com/solarized">Solarized</a>.
+              </small>
+            </p>
+          </footer>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-51785497-1', 'arteymix.github.io');
+        ga('send', 'pageview');
+    </script>
+
+  </body>
 </html>

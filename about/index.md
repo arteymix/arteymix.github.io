@@ -3,20 +3,21 @@ layout: default
 title: About
 ---
 
-# {{ page.title }}
-
-I am a passionate web developer. I work with multiple tools and languages on web 
+{{ page.title }}
+----------------
+I am a passionate web developer. I work with multiple tools and languages on web
 application.
 
-This blog is about web development. I will mostly talk about 
-[the Kohana framework](http://kohanaframework.org) as it is my main working 
-tool, but I will also write some articles about [Flask](http://flask.pocoo.org). 
-Since I am also a passionate of free software (like in free beer!), it should 
+This blog is about web development. I will mostly talk about
+[the Kohana framework](http://kohanaframework.org) as it is my main working
+tool, but I will also write some articles about [Flask](http://flask.pocoo.org).
+Since I am also a passionate of free software (like in free beer!), it should
 also host some articles on the matter.
 
-I currently work for [Hète.ca](http://hete.ca) and on my workgroup, 
-[Pittoresque](https://pittoresque.github.io). I do web development in both 
+I study Computer Science at [Université de Montréal](http://www.umontreal.ca).
+For now, I work at [Hète.ca](http://hete.ca) and on my workgroup,
+[Pittoresque](https://pittoresque.github.io). I do web development in both
 places.
 
-For those who care, my username is a slight modification of the goddess of hunt, 
+For those who care, my username is a slight modification of the goddess of hunt,
 Artemis.
