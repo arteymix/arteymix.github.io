@@ -1,10 +1,10 @@
 ---
 title: Kohana Makefile
 description: A Makefile I have just released on GitHub for the Kohana Framework
+keywords: selinux, makefile, make, kohana
 category: Kohana
 tags: kohana
 layout: post
-keywords: selinux, makefile, make, kohana
 external-url: https://gist.github.com/arteymix/4a162dd185ac0e4f781e
 ---
 
