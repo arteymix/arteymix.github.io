@@ -27,7 +27,7 @@ git clone https://github.com/arteymix/ghdl-lmc.git
 
 A project usually consist of entities and testbeds on these entities. A testbed
 applies entries on an entity and make assertions on outputs.
-{% highlight vhdl %}
+{% highlight vhdl linenos %}
 library ieee;
 
 use ieee.std_logic_1164.all;
