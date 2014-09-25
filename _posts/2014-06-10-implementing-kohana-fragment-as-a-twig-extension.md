@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementing Kohana Fragment as a Twig extension
-category: Kohana
+categories: Kohana
 description: Writting a Twig extension that supports Kohana Fragment.
 keywords: kohana, caching, optimization, fragment, twig extension
 ---
