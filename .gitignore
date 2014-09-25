@@ -1,2 +1,22 @@
-_site
-*.swp
+# Created by https://www.gitignore.io
+
+### Jekyll ###
+_site/
+.sass-cache/
+
+
+### vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+
+### Linux ###
+*~
+
+# KDE directory preferences
+.directory
+
