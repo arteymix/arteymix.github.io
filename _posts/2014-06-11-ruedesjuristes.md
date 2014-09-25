@@ -16,19 +16,19 @@ be found here at [ruedesjuristes.com](//ruedesjuristes.com).
 
 It's done entirely in PHP using the Kohana framework.
 
-This was the first time I would be working with Twig. It was a really nice 
-experience. Development was extremely fast and I would no lie saying it has 
-never bugged me. I did unit testing with PHPUnit and Kohana Request, which is 
+This was the first time I would be working with Twig. It was a really nice
+experience. Development was extremely fast and I would no lie saying it has
+never bugged me. I did unit testing with PHPUnit and Kohana Request, which is
 surprisingly efficient.
 
-Just to say, [Twig is a template engine produced by SensioLabs](http://twig.sensiolabs.org). 
-It was originally built for the Symphony framework, but it can be combined with 
-any of your favorite tool. Since I use the Kohana framework, you should look for 
+Just to say, [Twig is a template engine produced by SensioLabs](http://twig.sensiolabs.org).
+It was originally built for the Symphony framework, but it can be combined with
+any of your favorite tool. Since I use the Kohana framework, you should look for
 [this Twig module written by tommcdo](https://github.com/tommcdo/kohana-twig).
 
-I've been a little frustrated with errors handling when I had some mistakes in 
-my Twig syntax. When you get an error in a parsing tree and your debugger print 
-humongous structure recursively, you get out of memory quite quickly. To avoid 
+I've been a little frustrated with errors handling when I had some mistakes in
+my Twig syntax. When you get an error in a parsing tree and your debugger print
+humongous structure recursively, you get out of memory quite quickly. To avoid
 this, you may reduce the depth of recursion in ```Debug::dump``` by overloading
 it.
 
@@ -46,24 +46,24 @@ class Debug extends Kohana_Debug {
      * Reducing the default $depth from 10 to 2 to avoid reaching memory limit.
      */
     public static function dump($value, $length = 128, $depth = 2) {
-        
+
         return parent::dump($value, $length, $depth);
     }
 }
 {% endhighlight %}
 
-If you work with light templates, you should be fine with the default depth. It 
+If you work with light templates, you should be fine with the default depth. It
 is something to consider only if you reach the memory limit.
 
-[JSON](http://json.org) really saved me here! The website collects an big amount 
-of data to proceed the legal formalities. User have to submit forms with around 
-60 inputs. All the data are serialized once using ```json_encode```. I used the ```ORM::filters``` 
+[JSON](http://json.org) really saved me here! The website collects an big amount
+of data to proceed the legal formalities. User have to submit forms with around
+60 inputs. All the data are serialized once using ```json_encode```. I used the ```ORM::filters```
 feature to serialize the data on need.
 
 Form can also be submitted in ajax. To do so, you may use ```Request::is_ajax```
-and disable template rendering by setting ```Request::$auto_render``` to ```FALSE```. 
-I usually encode ```ORM_Validation_Exception``` errors if anything 
-wrong happen: they are well structured and translated, so it becomes a charm to 
+and disable template rendering by setting ```Request::$auto_render``` to ```FALSE```.
+I usually encode ```ORM_Validation_Exception``` errors if anything
+wrong happen: they are well structured and translated, so it becomes a charm to
 map errors to input!
 
 {% highlight php linenos %}
@@ -79,8 +79,8 @@ if ($this->request->is_ajax()) {
 
 ## Improvements in the mail module
 
-The project also permitted me to upgrade 
-[my mailing module](https://github.com/Hete/kohana-mail). I could consider it as 
+The project also permitted me to upgrade
+[my mailing module](https://github.com/Hete/kohana-mail). I could consider it as
 a really nice piece of software. It has a lovely closure syntax:
 
 {% highlight php linenos %}
@@ -93,8 +93,8 @@ Mailer::factory()
     ->send('foo@example.com');
 {% endhighlight %}
 
-It is also parsing recipient list using a nice regex, so you do not have to 
-worry sending more personal mail to your user, even if they have non-ascii 
+It is also parsing recipient list using a nice regex, so you do not have to
+worry sending more personal mail to your user, even if they have non-ascii
 username. It the worst case, it defaults to his email.
 
 Moreover, it supports attachment, so whenever you need to append a legal
@@ -110,9 +110,9 @@ Mailer::factory()
 
 ## PHPUnit and self-requesting
 
-Kohana is HMVC, which means that you can request any of your page in the 
-execution of any internal ```Request```. This is extremly convenient when 
-testing an application, since it generally ends up being about requesting an 
+Kohana is HMVC, which means that you can request any of your page in the
+execution of any internal ```Request```. This is extremly convenient when
+testing an application, since it generally ends up being about requesting an
 endpoint and asserting the new states of your data.
 
 {% highlight php linenos %}
@@ -132,8 +132,8 @@ class HomeTest extends Unittest_TestCase {
 }
 {% endhighlight %}
 
-Even the mail module is fully testable using ```Mail_Sender_Mock```. It is a 
-nice feature that simulates a mailing driver. It speeds up considerably the 
+Even the mail module is fully testable using ```Mail_Sender_Mock```. It is a
+nice feature that simulates a mailing driver. It speeds up considerably the
 testing as you don't need to wait for Sendmail.
 
 {% highlight php linenos %}
@@ -159,18 +159,18 @@ class HomeTest extends Unittest_TestCase {
 }
 {% endhighlight %}
 
-The website implements a payment solution based on PayPal. I did some work on 
-[a PayPal module](https://github.com/Hete/kohana-paypal) I have written, which 
-has become a simple external ```Request``` factory. It is much more convenient 
+The website implements a payment solution based on PayPal. I did some work on
+[a PayPal module](https://github.com/Hete/kohana-paypal) I have written, which
+has become a simple external ```Request``` factory. It is much more convenient
 this way then how it was before, since it reuses the code from Kohana.
 
-I also improved the IPN implementation. It was a little buggy, since I never 
+I also improved the IPN implementation. It was a little buggy, since I never
 really used it, but now it is fully working and tested!
 
 ## Fixtures
 
-Fixtures are really nicely done. I've overloaded Unittest_TestCase to add some 
-on-the-fly ```ORM``` generators. For instance, if you need a user to test the 
+Fixtures are really nicely done. I've overloaded Unittest_TestCase to add some
+on-the-fly ```ORM``` generators. For instance, if you need a user to test the
 login action:
 
 {% highlight php linenos %}
@@ -219,13 +219,13 @@ This is much better, in my opinion, than rely on ```Unittest_Database_TestCase``
 
 ## Coverage
 
-It is also the first time I've experienced test coverage and honestly, what an 
-amazing tool. It pretty much analyze your code while tests are running and 
-outputs statistics about code complexity and percentage of line execution. 
-Untested code is likely not to work, so having a good coverage is really 
+It is also the first time I've experienced test coverage and honestly, what an
+amazing tool. It pretty much analyze your code while tests are running and
+outputs statistics about code complexity and percentage of line execution.
+Untested code is likely not to work, so having a good coverage is really
 important.
 
-This project shown me tools that made the development considerably faster and 
+This project shown me tools that made the development considerably faster and
 fun. Having not to debug was probably the best thing I've experienced so far.
 Also, delivering a high quality web app really changed the way I've been seeing
 the development process.

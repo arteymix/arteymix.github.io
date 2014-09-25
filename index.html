@@ -17,7 +17,13 @@ layout: default
       <small>{{ post.date | date: "%b %d, %Y"}}</small>
     </h2>
 
-    <div>{{ post.content | excerpt }}</div>
+    <div>{{ post.excerpt }}</div>
+
+    <p>
+      <small>
+        Tagged with {{ post.tags | array_to_sentence_string }}.
+      </small>
+    </p>
 
   </article>
 

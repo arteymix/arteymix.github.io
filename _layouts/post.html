@@ -11,10 +11,16 @@ keywords: php, kohana, twig
     {% else %}
       <a href="{{ page.url }}">{{ page.title }}</a>
     {% endif %}
+    <small>in {{ page.categories | first }}</small>
   </h2>
 
   <div>{{ content }}</div>
 
-  <p><small>Posted on <span>{{ page.date | date: "%b %d, %Y" }}</span>.</small></p>
+  <p>
+    <small>
+      Tagged with {{ page.tags | array_to_sentence_string }}.<br/>
+      Posted on <span>{{ page.date | date: "%b %d, %Y" }}</span>.
+    </small>
+  </p>
 
 </article>

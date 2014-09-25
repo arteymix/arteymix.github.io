@@ -1,15 +1,15 @@
 ---
 title: Kohana Makefile
 description: A Makefile I have just released on GitHub for the Kohana Framework
-category: kohana
+category: Kohana
 tags: kohana
 layout: post
 keywords: selinux, makefile, make, kohana
 external-url: https://gist.github.com/arteymix/4a162dd185ac0e4f781e
 ---
 
-I have just released [my sample Kohana Makefile](https://gist.github.com/arteymix/4a162dd185ac0e4f781e). 
-It has useful recipes for minification, testing, setting permissions and 
+I have just released [my sample Kohana Makefile](https://gist.github.com/arteymix/4a162dd185ac0e4f781e).
+It has useful recipes for minification, testing, setting permissions and
 [SELinux](http://wikipedia.com/wiki/SELinux) contexts.
 
 Clone it
@@ -37,9 +37,9 @@ Or minify your resources
 make minify
 {% endhighlight %}
 
-It is fully configurable, so if you use a different css minifier, you may edit 
+It is fully configurable, so if you use a different css minifier, you may edit
 the file like you need it.
 
 My goal is to provide every Kohana developer with a good Makefile to automate
-frequent tasks when using the framework. I will eventually propose it in the 
+frequent tasks when using the framework. I will eventually propose it in the
 [sample Kohana application](https://github.com/kohana/kohana).
