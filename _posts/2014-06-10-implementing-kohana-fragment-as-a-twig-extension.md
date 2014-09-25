@@ -35,13 +35,13 @@ The only ability to declare hierarchical view would have been enough for me. But
 it has more: filters, embedding, auto-escaping and so on...
 
 Kohana has a [very nice extension for Twig written by tommcdo](https://github.com/tommcdo/kohana-twig).
-The extension is great because it simply extends the ```View``` class. It is
+The extension is great because it simply extends the `View` class. It is
 completely transparent to the original view engine.
 
-I did some changes like passing ```View``` global variables and supporting Twig
+I did some changes like passing `View` global variables and supporting Twig
 tests.
 
-A test in Twig is a statement using the ```is``` keyword. You may check if a
+A test in Twig is a statement using the `is` keyword. You may check if a
 value is null just by writting:
 
 {% highlight jinja linenos %}
@@ -54,12 +54,12 @@ value is null just by writting:
 
 Although, I couldn't find a decent caching solution that would bind to Kohana
 nicely. I did a little of research and I dig to find out I could just extend the
-Twig framework to implement new tag. Why not a ```fragment``` tag?
+Twig framework to implement new tag. Why not a `fragment` tag?
 
 First thing I did was to enable custom Twig Extension loading that I would just
 write down in the Kohana cascading file system.
 
-I started by adding an ```extensions``` field in the module configuration:
+I started by adding an `extensions` field in the module configuration:
 
 {% highlight php linenos %}
 <?php
@@ -77,7 +77,7 @@ return array(
 );
 {% endhighlight %}
 
-Here, the ```fragment``` tag will be parsed until a ```endfragment``` tag is
+Here, the `fragment` tag will be parsed until a `endfragment` tag is
 detected.
 
 {% highlight jinja %}
@@ -90,11 +90,11 @@ detected.
 {% endraw %}
 {% endhighlight %}
 
-Twig extension can define new ```TokenParser```. A token parser is pretty much
+Twig extension can define new `TokenParser`. A token parser is pretty much
 a class that is instantiated and called whenever a tag it parses is found in the
 document.
 
-The nodes within the `fragment` tag are captured by subparsing until the ```endfragment```
+The nodes within the `fragment` tag are captured by subparsing until the `endfragment`
 tag. Twig will delegate that work to appropriate token parser.
 
 {% highlight php linenos %}
@@ -201,7 +201,7 @@ As you can see, the node is designed to generate PHP code. Twig does not
 interpret but rather compile down to PHP.
 
 So far, I only need to find out how optional arguments for tag are implemented.
-It is not really convenient to specify every argument of ```Fragment::load```
+It is not really convenient to specify every argument of `Fragment::load`
 every time it is used.
 
 Fragment is a great tool to optimize region in a view and is often a convenient

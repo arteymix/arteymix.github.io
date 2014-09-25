@@ -31,7 +31,7 @@ any of your favorite tool. Since I use the Kohana framework, you should look for
 I've been a little frustrated with errors handling when I had some mistakes in
 my Twig syntax. When you get an error in a parsing tree and your debugger print
 humongous structure recursively, you get out of memory quite quickly. To avoid
-this, you may reduce the depth of recursion in ```Debug::dump``` by overloading
+this, you may reduce the depth of recursion in `Debug::dump` by overloading
 it.
 
 The great thing about Kohana is its cascading file system (CFS), which allow us
@@ -59,12 +59,12 @@ is something to consider only if you reach the memory limit.
 
 [JSON](http://json.org) really saved me here! The website collects an big amount
 of data to proceed the legal formalities. User have to submit forms with around
-60 inputs. All the data are serialized once using ```json_encode```. I used the ```ORM::filters```
-feature to serialize the data on need.
+60 inputs. All the data are serialized once using `json_encode`. I used the
+`ORM::filters` feature to serialize the data on need.
 
-Form can also be submitted in ajax. To do so, you may use ```Request::is_ajax```
-and disable template rendering by setting ```Request::$auto_render``` to ```FALSE```.
-I usually encode ```ORM_Validation_Exception``` errors if anything
+Form can also be submitted in ajax. To do so, you may use `Request::is_ajax`
+and disable template rendering by setting `Request::$auto_render` to `FALSE`.
+I usually encode `ORM_Validation_Exception` errors if anything
 wrong happen: they are well structured and translated, so it becomes a charm to
 map errors to input!
 
@@ -79,8 +79,8 @@ if ($this->request->is_ajax()) {
 }
 {% endhighlight %}
 
-## Improvements in the mail module
-
+Improvements in the mail module
+-------------------------------
 The project also permitted me to upgrade
 [my mailing module](https://github.com/Hete/kohana-mail). I could consider it as
 a really nice piece of software. It has a lovely closure syntax:
@@ -110,10 +110,10 @@ Mailer::factory()
     ->send($user->email);
 {% endhighlight %}
 
-## PHPUnit and self-requesting
-
+PHPUnit and self-requesting
+---------------------------
 Kohana is HMVC, which means that you can request any of your page in the
-execution of any internal ```Request```. This is extremly convenient when
+execution of any internal `Request`. This is extremly convenient when
 testing an application, since it generally ends up being about requesting an
 endpoint and asserting the new states of your data.
 
@@ -134,7 +134,7 @@ class HomeTest extends Unittest_TestCase {
 }
 {% endhighlight %}
 
-Even the mail module is fully testable using ```Mail_Sender_Mock```. It is a
+Even the mail module is fully testable using `Mail_Sender_Mock`. It is a
 nice feature that simulates a mailing driver. It speeds up considerably the
 testing as you don't need to wait for Sendmail.
 
@@ -163,16 +163,16 @@ class HomeTest extends Unittest_TestCase {
 
 The website implements a payment solution based on PayPal. I did some work on
 [a PayPal module](https://github.com/Hete/kohana-paypal) I have written, which
-has become a simple external ```Request``` factory. It is much more convenient
+has become a simple external `Request` factory. It is much more convenient
 this way then how it was before, since it reuses the code from Kohana.
 
 I also improved the IPN implementation. It was a little buggy, since I never
 really used it, but now it is fully working and tested!
 
-## Fixtures
-
+Fixtures
+--------
 Fixtures are really nicely done. I've overloaded Unittest_TestCase to add some
-on-the-fly ```ORM``` generators. For instance, if you need a user to test the
+on-the-fly `ORM` generators. For instance, if you need a user to test the
 login action:
 
 {% highlight php linenos %}
@@ -217,10 +217,11 @@ public function testLogin() {
 }
 {% endhighlight %}
 
-This is much better, in my opinion, than rely on ```Unittest_Database_TestCase``` for an ```ORM``` based application.
+This is much better, in my opinion, than rely on `Unittest_Database_TestCase`
+for an `ORM` based application.
 
-## Coverage
-
+Coverage
+--------
 It is also the first time I've experienced test coverage and honestly, what an
 amazing tool. It pretty much analyze your code while tests are running and
 outputs statistics about code complexity and percentage of line execution.
