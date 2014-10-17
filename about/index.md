@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: About
 ---
 
-{{ page.title }}
-----------------
 I am a passionate web developer. I work with multiple tools and languages on web
 application.
 
@@ -18,6 +16,9 @@ I study Computer Science at [Université de Montréal](http://www.umontreal.ca).
 For now, I work at [Hète.ca](http://hete.ca) and on my workgroup,
 [Pittoresque](https://pittoresque.github.io). I do web development in both
 places.
+
+If you would like to reach me, I have an email address which can be accessed in
+the left column.
 
 For those who care, my username is a slight modification of the goddess of hunt,
 Artemis.

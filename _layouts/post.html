@@ -1,10 +1,10 @@
 ---
 layout: default
-keywords: php, kohana, twig
 ---
+
 <article class="post">
 
-  <h2>
+  <h2 class="post-title">
     {% if page.external-url %}
       <a href="{{ page.external-url }}">{{ page.title }}</a>
       <a class="anchor" href="{{ page.url }}"><i class="glyphicon glyphicon-leaf"></i></a>
@@ -14,9 +14,9 @@ keywords: php, kohana, twig
     <small>in {{ page.categories | first }}</small>
   </h2>
 
-  <div>{{ content }}</div>
+  <div class="post-content">{{ content }}</div>
 
-  <p>
+  <p class="post-footer">
     <small>
       Tagged with {{ page.tags | array_to_sentence_string }}.<br/>
       Posted on <span>{{ page.date | date: "%b %d, %Y" }}</span>.
