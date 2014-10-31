@@ -13,12 +13,15 @@ Since I am also a passionate of free software (like in free beer!), it should
 also host some articles on the matter.
 
 I study Computer Science at [Université de Montréal](http://www.umontreal.ca).
-For now, I work at [Hète.ca](http://hete.ca) and on my workgroup,
+For now, I work at [Hète.ca](http://hete.ca) and on my workgroup
 [Pittoresque](https://pittoresque.github.io). I do web development in both
 places.
 
 If you would like to reach me, I have an email address which can be accessed in
-the left column.
+the left column. If you have to send sensitive information, you may use
+[GnuPG](https://www.gnupg.org) along with my
+[public key](/assets/guillaumepoiriermorency.gpg) which id is
+<code>B1AD6EA5</code>.
 
 For those who care, my username is a slight modification of the goddess of hunt,
 Artemis.

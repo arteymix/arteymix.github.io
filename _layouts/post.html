@@ -3,7 +3,6 @@ layout: default
 ---
 
 <article class="post">
-
   <h2 class="post-title">
     {% if page.external-url %}
       <a href="{{ page.external-url }}">{{ page.title }}</a>
@@ -13,16 +12,12 @@ layout: default
     {% endif %}
     <small>in {{ page.categories | first }}</small>
   </h2>
-
   <div class="post-content">{{ content }}</div>
-
   <p class="post-footer">
     <small>
       Tagged with {{ page.tags | array_to_sentence_string }}.<br/>
       Posted on <span>{{ page.date | date: "%b %d, %Y" }}</span>.
     </small>
   </p>
-
   <div id="disqus_thread"></div>
-
 </article>

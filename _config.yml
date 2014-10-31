@@ -8,4 +8,4 @@ paginate: 10
 highlight: true
 markdown: kramdown
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'Makefile']
