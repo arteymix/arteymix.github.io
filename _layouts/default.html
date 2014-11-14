@@ -8,7 +8,14 @@
     <meta name="author" content="{{ site.author }}">
     <meta name="viewport" content="width=device-width">
 
-    <link href="/assets/img/glyphicon-leaf.png" rel="shortcut icon">
+    <link rel="author" href="/about">
+    <link rel="shortcut icon" href="/assets/img/glyphicon-leaf.png">
+
+    <!-- OpenGraph http://ogp.me/ -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="https://gravatar.com/avatar/f74142e4e76004b644fc0538350e1b6b?s=128">
+    <meta property="og:url" content="{{ page.url }}">
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">
@@ -17,7 +24,6 @@
   </head>
 
   <body>
-
     <header class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-3">
@@ -28,7 +34,6 @@
           </div>
         </div>
     </header>
-
     <div id="page" class="container">
       <div class="row">
         <div id="sidebar" class="col-md-2 col-md-offset-1" role="navigation">
@@ -62,7 +67,6 @@
         </div>
       </div>
     </div>
-
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -71,7 +75,6 @@
         ga('create', 'UA-51785497-1', 'arteymix.github.io');
         ga('send', 'pageview');
     </script>
-
     <script>
         var disqus_shortname = 'adayinapileofwork';
         var disqus_title = {{ page.title | jsonify }};
@@ -84,6 +87,5 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-
   </body>
 </html>
