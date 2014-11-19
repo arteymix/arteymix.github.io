@@ -161,7 +161,7 @@ flow as it keeps the program depth constant.
 Loops
 -----
 How do we loop? Mostly we don't: applying a treatment on all elements of an
-array is done using `map`.
+list is done using `map`.
 {% highlight scheme %}
 (map function list)
 {% endhighlight %}
@@ -185,15 +185,57 @@ in functionnal programming. We call a expression that can be tail-recursed an
 iterative form. They are very practical as they use a constant amount of stack
 once optimized.
 
+Data structure
+--------------
+Think of it: list can represent fixed-size array, linked-list, tree and even
+map.
+
+To introduce data structure property, I have to describe what a symbol is.
+Usually, a Scheme interpreter will evaluate expression, but you may prevent this
+behiaviour using a the `quote` function or a simple quote.
+{% highlight scheme %}
+(quote (1 2 3)) => '(1 2 3)
+{% endhighlight %}
+
+This will freeze the evaluation which result in a symbol. Symbols are generally
+lists and used for data structure.
+
+Map are implemented as a list of pair. To understand what a pair is, you must
+know that every list in Lisp is a pair where the first element is a value and
+the second is a list where the first element.. you get the point.
+
+Therefore, when you write
+{% highlight scheme %}
+'(1 2 3)
+{% endhighlight %}
+
+You have, in fact, written
+{% highlight scheme %}
+'(1 (2 (3 ())))
+{% endhighlight %}
+
+If you want to create a pair, you can use the `cons` function or put a dot
+before the second element.
+{% highlight scheme %}
+(cons 1 2) => '(1 . 2)
+{% endhighlight %}
+
+A map is a list of pairs that can be accessed using `assoc`
+{% highlight scheme %}
+(define m '((1 . 2) (2 . 3) (3 . 4)))
+(assoc m 1) => 2
+(cons 1 2) => '(1 . 2)
+{% endhighlight %}
+
 Remarks
 -------
 I would like to finish with a couple of remarks about Scheme and Lisp in
 general.
 
 You have probably noticed that outside _special forms_, order of evaluation is
-irrelevant. This is an important aspect of Lisp-like languages as it makes them
-show built-in parallelism capabilities.
+irrelevant, providing great parallelism perspectives. No doubt Lisp was
+developed to be the language for AI.
 
 This is it. I really hope you dig into functionnal programming like I do: it
-makes you think differently and makes you better at programming in general.
+makes you think differently and better at programming.
 

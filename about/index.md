@@ -15,7 +15,9 @@ also host some articles on the matter.
 I study Computer Science at [Université de Montréal](http://www.umontreal.ca).
 For now, I work at [Hète.ca](http://hete.ca) and on my workgroup
 [Pittoresque](https://pittoresque.github.io). I do web development in both
-places.
+places. You might want to sneak a peek at my
+[_curiculum vitae_](/assets/curiculum-vitae.pdf) (beware, it's in french).
+
 
 If you would like to reach me, I have an email address which can be accessed in
 the left column. If you have to send sensitive information, you may use
