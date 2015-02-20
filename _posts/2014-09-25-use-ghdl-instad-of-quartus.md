@@ -1,7 +1,6 @@
 ---
 title: Using ghdl instead of Quartus II
 keywords: ghdl vhdl quartus gtkwave
-category: ghdl
 tags: ghdl
 layout: post
 ---

@@ -1,6 +1,6 @@
 ---
-title: A day in a pile of work
 layout: default
+title: A day in a pile of work
 ---
 
 {% for post in paginator.posts %}
@@ -19,11 +19,7 @@ layout: default
 
     <div>{{ post.excerpt }}</div>
 
-    <p>
-      <small>
-        Tagged with {{ post.tags | array_to_sentence_string }}.
-      </small>
-    </p>
+    <p><small>Tagged with {{ post.tags | array_to_sentence_string }}.</small></p>
 
   </article>
 

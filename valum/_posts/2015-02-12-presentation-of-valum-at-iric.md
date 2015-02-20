@@ -1,19 +1,8 @@
 ---
-layout: project
-title: Valum web micro-framework
+layout: post
+title: Presentation of Valum at the IRIC lab team
+tags: vala web
 ---
-
-Valum is a web micro-framework and it is awesome.
-
-Here's the UML class diagram describing the internal architecture of the
-framework and middleware:
-
-<a href="/projects/valum/valum-class-diagram.svg"><img class="img-responsive" src="/projects/valum/valum-class-diagram.svg"></a>
-
--------------------------------------------------------------------------------
-
-Presentation of the project at the IRIC lab team
-------------------------------------------------
 
 I have presented the framework to the IRIC team. They do research in
 bio-informatics.

@@ -10,12 +10,16 @@ layout: default
     {% else %}
       <a href="{{ page.url }}">{{ page.title }}</a>
     {% endif %}
-    <small>in {{ page.categories | first }}</small>
+    {% if page.categories.size > 0 %}
+      <small>in <a href="/{{ page.categories | join '/' }}">{{ page.categories | last }}</a></small>
+  {% endif %}
   </h2>
   <div class="post-content">{{ content }}</div>
   <p class="post-footer">
     <small>
+      {% if page.tags.size > 0 %}
       Tagged with {{ page.tags | array_to_sentence_string }}.<br/>
+      {% endif %}
       Posted on <span>{{ page.date | date: "%b %d, %Y" }}</span>.
     </small>
   </p>

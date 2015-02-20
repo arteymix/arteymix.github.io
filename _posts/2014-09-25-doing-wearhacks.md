@@ -3,7 +3,6 @@ layout: post
 title: Doing WearHacks!
 keywords: WearHacks, Hackaton, wearable, Nod ring, Bluetooth, Unity
 tags: Hackaton Bluetooth
-category: Hackaton
 external-url: https://wearhacks.com
 ---
 

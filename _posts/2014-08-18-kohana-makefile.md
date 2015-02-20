@@ -3,7 +3,6 @@ layout: post
 title: Kohana Makefile
 description: A Makefile I have just released on GitHub for the Kohana Framework
 keywords: SELinux Makefile make Kohana
-category: Kohana
 tags: Kohana
 external-url: https://gist.github.com/arteymix/4a162dd185ac0e4f781e
 ---

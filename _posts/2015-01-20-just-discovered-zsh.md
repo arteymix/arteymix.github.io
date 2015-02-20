@@ -3,7 +3,6 @@ layout: post
 title: Just discovered.. zsh!
 keywords: zsh antigen liquidprompt shell linux
 tags: linux zsh
-category: zsh
 ---
 
 I never thought I would find `zsh` actually that great. I feel like I've been
