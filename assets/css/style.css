@@ -13,13 +13,27 @@
   src: url(/assets/fonts/DejaVuSansMono.ttf)
 }
 
-body {
-  margin: 40px auto 40px auto;
+#header-content {
+  padding-top: 40px;
+  background: #fdf6e3;
+}
+
+#content {
+  padding-bottom: 40px;
+  background: #fdf6e3;
+}
+
+#content code {
+  background-color: #eee8d5;
 }
 
 .highlight > pre {
   padding: 0;
   margin: 0;
+}
+
+.highlight code {
+  background-color: #073642 !important;
 }
 
 .highlight {
@@ -30,4 +44,12 @@ body {
   background-color: #073642 !important;
   color: #93a1a1;
   border: 1px solid #2d6472;
+}
+
+#disqus_thread {
+  background-color: #073642 !important;
+  border-radius: 3px 3px 3px 3px;
+  border: 1px solid #2d6472;
+  margin: 0 0 10px;
+  padding: 4px;
 }
