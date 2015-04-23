@@ -23,17 +23,14 @@
   background: #fdf6e3;
 }
 
-#content code {
+/* recolor inlined code */
+#content p > code {
   background-color: #eee8d5;
 }
 
 .highlight > pre {
   padding: 0;
   margin: 0;
-}
-
-.highlight code {
-  background-color: #073642 !important;
 }
 
 .highlight {
