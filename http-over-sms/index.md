@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: category
 title: µHTTP over SMS
 description:
 keywords:

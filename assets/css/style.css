@@ -43,6 +43,18 @@
   border: 1px solid #2d6472;
 }
 
+.category p {
+  text-align: justify;
+}
+
+.page p {
+  text-align: justify;
+}
+
+.post p {
+  text-align: justify;
+}
+
 #disqus_thread {
   background-color: #073642 !important;
   border-radius: 3px 3px 3px 3px;

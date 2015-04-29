@@ -46,7 +46,9 @@
             <li><a href="/">Home</a></li>
             <li><a href="/archives">Archive</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/valum">Valum</a></li>
+            {% for category in site.categories | keys %}
+              <li><a href="/{{ category[0] }}">{{ category[0] | capitalize }}</a></li>
+            {% endfor %}
             <li><a href="https://github.com/arteymix">GitHub</a></li>
             <li><a href="https://twitter.com/@arteymix">Twitter</a></li>
             <li><a href="mailto:guillaumepoiriermorency@gmail.com">Email</a></li>
@@ -55,7 +57,7 @@
         </nav>
       </div>
       <div id="content" class="col-md-8" role="main">
-        <div>{{ content }}</div>
+        {{ content }}
         <footer class="text-center">
           <p class="copyright">
           <small>
@@ -89,4 +91,4 @@
    })();
   </script>
   </body>
-  </html>
+</html>
