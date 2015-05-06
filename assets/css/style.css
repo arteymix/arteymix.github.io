@@ -14,12 +14,12 @@
 }
 
 #header-content {
-  padding-top: 40px;
+  padding: 40px 80px 0px 80px;
   background: #fdf6e3;
 }
 
 #content {
-  padding-bottom: 40px;
+  padding: 0px 80px 40px 80px;
   background: #fdf6e3;
 }
 
