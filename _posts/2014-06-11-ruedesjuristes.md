@@ -1,9 +1,9 @@
 ---
 layout: post
 title: RueDesJuristes
-tags: PayPal Kohana
 description: Web application offering juridic services for french societies.
 keywords: PayPal, RueDesjuristes, web, PHP, Kohana, french society
+tags: Kohana PayPal
 ---
 
 <figure class="thumbnail">

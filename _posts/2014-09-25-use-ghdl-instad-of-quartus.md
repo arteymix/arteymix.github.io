@@ -1,8 +1,8 @@
 ---
+layout: post
 title: Using ghdl instead of Quartus II
 keywords: ghdl vhdl quartus gtkwave
-tags: ghdl
-layout: post
+tags: GHDL
 ---
 
 ghdl is a great tool to prototype hardware quickly. It can be combined with
@@ -14,18 +14,21 @@ This post explain how to replace Quartus in the process of developing the device
 ...
 
 First of all, you need `ghdl` and `gtkwave` installed on your workstation.
+
 {% highlight bash %}
 yum install ghdl gtkwave
 {% endhighlight %}
 
 Then you can create a sample project or
 [clone one I did last semester](https://github.com/arteymix/ghdl-lmc).
+
 {% highlight bash %}
 git clone https://github.com/arteymix/ghdl-lmc.git
 {% endhighlight %}
 
 A project usually consist of entities and testbeds on these entities. A testbed
 applies entries on an entity and make assertions on outputs.
+
 {% highlight vhdl linenos %}
 library ieee;
 
@@ -72,6 +75,7 @@ end architecture;
 {% endhighlight %}
 
 ghdl can generate a Makefile for a specified unit
+
 {% highlight bash %}
 ghdl --gen-makefile testbed
 {% endhighlight %}
@@ -79,17 +83,20 @@ ghdl --gen-makefile testbed
 ghdl can analyze, elaborate or run a simulation. The analyze part is essential
 as it will generate object files for each entities. Then you can link all those
 into a single executable. This is automated by the `make` command.
+
 {% highlight bash %}
 make
 {% endhighlight %}
 
 Once you have a correct result, you may run it and capture signals
+
 {% highlight bash %}
 ./testbed --vcd=testbed.vcd
 {% endhighlight %}
 
 gtkwave is a tool designed to analyze signals, specifically the generated vcd
 file.
+
 {% highlight bash %}
 gtkwave testbed.vcd
 {% endhighlight %}
@@ -98,8 +105,8 @@ In gtkwave, you have to select the device in SST section and append the signals
 on your workarea. You may then zoom it and out to see the actual waves.
 
 <figure class="thumbnail">
-    <img class="img-responsive" src="/assets/img/sample-of-gtkwave.png">
-    <figcaption class="caption">Example of gtkwave usage.</figcaption>
+  <img class="img-responsive" src="/assets/img/sample-of-gtkwave.png">
+  <figcaption class="caption">Example of gtkwave usage.</figcaption>
 </figure>
 
 I really hope this will help you out! I did enjoy VHDL and I really liked

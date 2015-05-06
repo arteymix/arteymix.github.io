@@ -2,7 +2,7 @@
 layout: post
 title: Just discovered.. zsh!
 keywords: zsh antigen liquidprompt shell linux
-tags: linux zsh
+tags: Linux zsh
 ---
 
 I never thought I would find `zsh` actually that great. I feel like I've been
@@ -18,16 +18,19 @@ have to:
  4. enjoy all the above!
 
 zsh is quite easy to install using your distribution package manager:
+
 {% highlight bash %}
 yum install zsh
 {% endhighlight %}
 
 antigen can be cloned from GitHub
+
 {% highlight bash %}
 git clone https://github.com/zsh-users/antigen.git .antigen
 {% endhighlight %}
 
 Now, edit your first `.zshrc` initialization file!
+
 {% highlight bash %}
 source ~/.antigen/antigen.zsh
 
