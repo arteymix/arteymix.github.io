@@ -11,7 +11,7 @@ layout: default
       <a href="{{ page.url }}">{{ page.title }}</a>
     {% endif %}
     {% if page.categories.size > 0 %}
-      <small>in <a href="/{{ page.categories | join '/' }}">{{ page.categories | last }}</a></small>
+      <small>in <a href="/{{ page.categories | join '/' }}">{{ page.categories | last | capitalize }}</a></small>
   {% endif %}
   </h2>
   <div class="post-content">{{ content }}</div>
