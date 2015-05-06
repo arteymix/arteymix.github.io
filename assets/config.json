@@ -1,16 +1,16 @@
 {
   "vars": {
-    "@gray-base": "#000",
-    "@gray-darker": "#839496",
-    "@gray-dark": "#839496",
-    "@gray": "#839496",
+    "@gray-base": "#657b83",
+    "@gray-darker": "#586e75",
+    "@gray-dark": "#586e75",
+    "@gray": "#657b83",
     "@gray-light": "#839496",
-    "@gray-lighter": "#839496",
+    "@gray-lighter": "#93a1a1",
     "@brand-primary": "#cb4b16",
-    "@brand-success": "#5cb85c",
-    "@brand-info": "#5bc0de",
-    "@brand-warning": "#f0ad4e",
-    "@brand-danger": "#d9534f",
+    "@brand-success": "#859900",
+    "@brand-info": "#268bd2",
+    "@brand-warning": "#b58900",
+    "@brand-danger": "#dc322f",
     "@body-bg": "#002a35",
     "@text-color": "@gray-dark",
     "@link-color": "@brand-primary",
@@ -94,6 +94,7 @@
     "@input-height-base": "(@line-height-computed + (@padding-base-vertical * 2) + 2)",
     "@input-height-large": "(ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2)",
     "@input-height-small": "(floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2)",
+    "@form-group-margin-bottom": "15px",
     "@legend-color": "@gray-dark",
     "@legend-border-color": "#e5e5e5",
     "@input-group-addon-bg": "@gray-lighter",
@@ -401,6 +402,7 @@
     "media.less",
     "list-group.less",
     "panels.less",
+    "responsive-embed.less",
     "wells.less",
     "close.less",
     "component-animations.less",
@@ -424,5 +426,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=560a7a4f1fa34e1f9066"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=5c432127f96b88a8a9f0"
 }
