@@ -16,8 +16,15 @@ title: Archives
       {% else %}
         <a href="{{ post.url }}">{{ post.title }}</a>
       {% endif %}
-      <small>{{ post.date | date: "%b %d, %Y"}}</small>
+      {% if post.categories.size > 0 %}
+        <small>in <a href="/{{ post.categories | join '/' }}">{{ post.categories | last | capitalize }}</a></small>
+      {% endif %}
     </h3>
     <p>{{ post.excerpt }}</p>
+    <p>
+      <small>
+        Posted on {{ post.date | date: "%b %d, %Y"}} and tagged with {{ post.tags | array_to_sentence_string }}.
+      </small>
+    </p>
   </article>
 {% endfor %}

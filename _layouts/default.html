@@ -58,6 +58,31 @@
       </div>
       <div id="content" class="col-md-8" role="main">
         {{ content }}
+        {% if paginator.total_pages > 1 %}
+          <ul class="pager">
+            <li class="previous">
+              {% if paginator.previous_page %}
+                {% if paginator.page == 2 %}
+                  <a href="/">&larr; Newer</a>
+                {% else %}
+                  <a href="/page{{paginator.previous_page}}/">&larr; Newer</a>
+                {% endif %}
+              {% else %}
+                <span>&larr; Newer</span>
+              {% endif %}
+            </li>
+
+            <li><span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span></li>
+
+            <li class="next">
+              {% if paginator.next_page %}
+                <a href="/page{{paginator.next_page}}/">Older &rarr;</a>
+              {% else %}
+                <span>Older &rarr;</span>
+              {% endif %}
+            </li>
+          </ul>
+        {% endif %}
         <footer class="text-center">
           <p class="copyright">
           <small>
