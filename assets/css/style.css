@@ -24,7 +24,7 @@
 }
 
 /* recolor inlined code */
-#content p > code {
+code {
   background-color: #eee8d5;
 }
 
