@@ -43,3 +43,10 @@ It brings many improvements:
  - setup and teardown in the Router for pre and post processing of requests
  - user documentation improvments (Sphinx + general rewrites)
  - optional features based on gio-2.0 and libsoup-2.4 versions
+
+### 0.1.0-alpha released!
+
+I have released a `0.1.0-alpha` version. For more information, you can read the
+[release notes on GitHub](https://github.com/valum-framework/valum/releases/tag/v0.1.0-alpha),
+download it and try it out!
+

@@ -79,7 +79,7 @@ a stack.
 In the preceeding example, you need to push `1`, `2`, `3`, `4`, `5` in the
 stack. When you read `+`, you pop the stack and apply the addition then push the
 result back. It works no matter how complicated your expression is. This is how
-[PostScript]() work for instance.
+[PostScript](http://en.wikipedia.org/wiki/PostScript) work for instance.
 
 Lisp is prefix, so is Scheme:
 {% highlight scheme %}
@@ -131,9 +131,10 @@ a few weeks ago.
 
 Conditional
 -----------
-In order for conditional expression to work, we need boolean values. In scheme,
+In order for conditional expression to work, we need boolean values. In Scheme,
 `#f` is false and anything different is considered true (`#t`). This is a very
-elegant way to describe truth.
+elegant way to describe truth, considering other languages like PHP have a
+really ill way of doing so.
 
 Scheme has `if` and `cond` syntax for describing conditionals.
 
@@ -151,9 +152,11 @@ expression to be evaluated given the first to be true. Scheme stops on the first
 condition being true.
 {% highlight scheme %}
 (cond
-  ((c1) (...))  ; evaluated if c1 is #t
-  ((c2) (...))) ; evaluated if c2 is #f
+  ((c1) (e1))  ; e2 evaluated if c1 is #t
+  ((c2) (e2))) ; e2 evaluated if c1 is #f and c2 is #t
 {% endhighlight %}
+
+This really looks like a `switch` statement from imperative programming.
 
 `cond` are preferred over `if` when you need to branch in more than 2 control
 flow as it keeps the program depth constant.
@@ -169,7 +172,7 @@ list is done using `map`.
 For example, if you want to have a list of absolute values,
 {% highlight scheme %}
 (map (lambda (x)
-  (+ x)) '(1 -1 2))
+       (+ x)) '(1 -1 2))
 => '(1 1 2)
 {% endhighlight %}
 
