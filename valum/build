@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-pandoc -t beamer -V theme:Rochester --latex-engine xelatex -o presentation.pdf presentation.md
