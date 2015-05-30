@@ -6,6 +6,7 @@ description: My personal web development blog
 permalink: /:year/:month/:day/:title/
 paginate: 10
 highlight: true
-markdown: kramdown
+highlighter: pygments
+markdown: redcarpet
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'Makefile']
