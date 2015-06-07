@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fifth week update 15/05/15 to 29/05/15
+title: Fifth week update 18/05/15 to 29/05/15
 ---
 
 These past two weeks, I have bee working on a new release `0.2.0-alpha` and
