@@ -54,11 +54,3 @@ code {
 .post p {
   text-align: justify;
 }
-
-#disqus_thread {
-  background-color: #073642 !important;
-  border-radius: 3px 3px 3px 3px;
-  border: 1px solid #2d6472;
-  margin: 0 0 10px;
-  padding: 4px;
-}

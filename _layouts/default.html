@@ -104,10 +104,8 @@
   ga('send', 'pageview');
   </script>
   <script>
-  var disqus_shortname = 'adayinapileofwork';
-  var disqus_title = {{ page.title | jsonify }};
-  var disqus_identifier = {{ page.id | jsonify }};
-  var disqus_category_id = {{ page.categories | first | jsonify }};
+  var disqus_shortname   = 'adayinapileofwork';
+  var disqus_identifier  = {{ page.id | jsonify }};
 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
