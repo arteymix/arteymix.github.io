@@ -7,6 +7,9 @@ permalink: /:year/:month/:day/:title/
 paginate: 10
 highlight: true
 highlighter: pygments
-markdown: redcarpet
+markdown: kramdown
+
+kramdown:
+    input: GFM
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'Makefile']
