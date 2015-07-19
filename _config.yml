@@ -3,13 +3,10 @@ url: https://arteymix.github.io
 author: Guillaume Poirier-Morency <guillaumepoiriermorency@gmail.com>
 description: My personal web development blog
 
-permalink: /:year/:month/:day/:title/
-paginate: 10
-highlight: true
-highlighter: pygments
-markdown: kramdown
-
-kramdown:
-    input: GFM
-
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'Makefile']
+
+paginate: 10
+
+markdown:    redcarpet
+highlighter: pygments
+
