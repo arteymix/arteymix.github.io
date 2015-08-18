@@ -10,3 +10,5 @@ paginate: 10
 markdown:    redcarpet
 highlighter: pygments
 
+gems:
+  - jekyll-sitemap
