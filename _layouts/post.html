@@ -2,23 +2,6 @@
 layout: default
 ---
 
-<article class="post">
-  <h2 class="post-title">
-    {% if page.external-url %}
-      <a href="{{ page.external-url }}">{{ page.title }}</a>
-      <a class="anchor" href="{{ page.url }}"><i class="glyphicon glyphicon-leaf"></i></a>
-    {% else %}
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    {% endif %}
-    {% if page.categories.size > 0 %}
-      <small>in <a href="/{{ page.categories | join '/' }}">{{ page.categories | last | capitalize }}</a></small>
-    {% endif %}
-  </h2>
-  <div class="post-content">{{ content }}</div>
-  <p class="post-footer">
-    <small>
-      Posted on {{ page.date | date: "%b %d, %Y"}} and tagged with {{ page.tags | array_to_sentence_string }}.
-    </small>
-  </p>
-  <div id="disqus_thread"></div>
-</article>
+{% include post.html post=page content=content %}
+
+<div id="disqus_thread"></div>
