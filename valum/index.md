@@ -4,6 +4,8 @@ title: Valum web micro-framework
 categories: valum
 ---
 
+<img class="pull-left" style="width: 8em;" src="/assets/img/valum-icon.png" title="Valum micro-framework branding">
+
 Valum is a web micro-framework written in the
 [Vala programming language](https://wiki.gnome.org/Projects/Vala). It is
 a powerful and minimalistic tool build on VSGI, a middleware that supports
