@@ -27,3 +27,14 @@ the left column. If you have to send sensitive information, you may use
 
 For those who care, my username is a slight modification of the goddess of hunt,
 Artemis.
+
+### Some of my work
+
+I've been doing more web-related work, more specifically:
+
+ - [RueDesJuristes](https://ruedesjuristes.com) is a juridic platform which
+   connects users with jurists to perform society-related operations.
+ - [Valum](https://github.com/valum-framework/valum) is a web micro-framework
+   entirely written in the Vala programming language. There's a
+   [dedicated category](/valum) to this project in this blog.
+
