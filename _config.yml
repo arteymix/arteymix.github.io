@@ -7,8 +7,9 @@ exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'Makefile']
 
 paginate: 10
 
-markdown:    redcarpet
-highlighter: pygments
+highlighter: pygment
+kramdown:
+    input: GFM
 
 gems:
   - jekyll-sitemap
