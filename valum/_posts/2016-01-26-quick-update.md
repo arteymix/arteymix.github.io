@@ -11,7 +11,7 @@ met.
 
 It is used for content negociation and works quite nicely.
 
-```vala
+```csharp
 app.get ("", accept ("text/html", (req, res, next) => {
     // user agent understands 'text/html'
 

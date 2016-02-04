@@ -42,7 +42,7 @@ This feature becomes handy for various use cases:
 This example shows how a state can be passed to conveniently split the
 processing in multiple middlewares and obtain a more modular application.
 
-```vala
+```csharp
 app.scope ("user/<int:id>", (user) => {
     // fetch the user in a generic manner
     app.all (null, (req, res, next) => {
@@ -77,7 +77,7 @@ app.scope ("user/<int:id>", (user) => {
 It can also be used to build a component like a `Session` from the request
 cookies and pass it.
 
-```vala
+```csharp
 app.all (null, (req, res, next) => {
     for (var cookie in  req.cookies)
         if (cookie.name == "session")
@@ -93,7 +93,7 @@ that will be incorporated in a near future. It will help solving typical case
 where a handler produce a data and other handlers worry about its transmission
 in a desired format.
 
-```vala
+```csharp
 app.get ("some_data", (req, res, next) => {
     next ("I am a state!");
 });

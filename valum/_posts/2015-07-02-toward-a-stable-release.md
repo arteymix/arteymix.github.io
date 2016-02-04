@@ -27,7 +27,7 @@ When an async function is called, the callback that will process its result
 does not execute in the routing context and, consequently, does not benefit
 from any form of status handling.
 
-```vala
+```csharp
 app.get ("", (req, res, next) => {
     res.body.write_async ("Hello world!".data, () => {
         next (); // if next throws anything, it's lost
@@ -38,7 +38,7 @@ app.get ("", (req, res, next) => {
 What `invoke` brings is the possibility to invoke a `NextCallback` in the
 context of any `Router`, typically the current one.
 
-```vala
+```csharp
 app.get ("", (req, res, next) => {
     res.body.write_async ("Hello world!".data, () => {
         app.invoke (req, res, next);
@@ -54,7 +54,7 @@ The following example will redirect the client as if the redirection was thrown
 from the API router, which might possibly handle redirection in a particular
 manner.
 
-```vala
+```csharp
 app.get ("api", (req, res) => {
     // redirect old api calls
     api.invoke (req, res, () => { throw new Redirection ("http://api.example.com"); })

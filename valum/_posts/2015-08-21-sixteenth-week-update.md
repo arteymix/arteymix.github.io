@@ -21,7 +21,7 @@ adapting to the `Request` and `Response` objects.
 I introduced `sign` and `verify` to perform cookie signature and verification
 using HMAC.
 
-```vala
+```csharp
 using Soup;
 using VSGI;
 
@@ -62,7 +62,7 @@ to change their typical behaviour.
 Within Valum, it is integrated by passing the `Request` and `Response` object
 to the `NextCallback`.
 
-```vala
+```csharp
 app.get ("", (req, res, next) => {
     next (req, new BufferedResponse (res));
 }).then ((req, res) => {

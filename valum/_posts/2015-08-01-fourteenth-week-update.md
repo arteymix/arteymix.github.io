@@ -22,7 +22,7 @@ There's a couple of features I think that could be worth in the stable release:
 I have implemented a `lookup` function for cookies which finds a cookie in the
 request headers by its name.
 
-```vala
+```csharp
 var cookie = Cookies.lookup ("session", req.headers);
 ```
 

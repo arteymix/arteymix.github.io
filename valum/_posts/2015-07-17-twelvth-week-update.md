@@ -100,7 +100,7 @@ This feature is really handy as it is common to reuse the matching process for
 a sequence of handling callbacks. I will be introduced in the `0.3` branch as
 it will work nicely along middlewares.
 
-```vala
+```csharp
 app.get ("", (req, res, next) => {
     // step 1
 }).then ((req, res, next) => {
