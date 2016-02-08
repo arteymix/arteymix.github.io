@@ -1,184 +1,220 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="62cm" height="35cm" viewBox="152 -45 1236 684" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="67cm" height="38cm" viewBox="203 -100 1321 741" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g>
-    <rect style="fill: #ffffff" x="260.826" y="185.992" width="333.4" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="260.826" y="185.992" width="333.4" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="427.526" y="204.992">Request</text>
-    <rect style="fill: #ffffff" x="260.826" y="213.992" width="333.4" height="84"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="260.826" y="213.992" width="333.4" height="84"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="263.826" y="227.992">+params: HashTable&lt;string, string&gt;? = null</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="263.826" y="243.992">+uri: Soup.URI</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="263.826" y="259.992">+query: HashTable&lt;string, string&gt;</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="263.826" y="275.992">+headers: Soup.MessageHeader</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="263.826" y="291.992">+cookies: SList&lt;Soup.Cookie&gt;</text>
-    <rect style="fill: #ffffff" x="260.826" y="297.992" width="333.4" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="260.826" y="297.992" width="333.4" height="8"/>
+    <rect style="fill: #ffffff" x="204.943" y="353.372" width="318" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="204.943" y="353.372" width="318" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="363.943" y="372.372">Request</text>
+    <rect style="fill: #ffffff" x="204.943" y="381.372" width="318" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="204.943" y="381.372" width="318" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="207.943" y="395.372">+uri: Soup.URI</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="207.943" y="411.372">+query: GLib.HashTable&lt;string, string?&gt;?</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="207.943" y="427.372">+headers: Soup.MessageHeader</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="207.943" y="443.372">+cookies: GLib.SList&lt;Soup.Cookie&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="207.943" y="459.372">+body: GLib.InputStream</text>
+    <rect style="fill: #ffffff" x="204.943" y="465.372" width="318" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="204.943" y="465.372" width="318" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="207.943" y="479.372">+flatten(): uint8[]</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="207.943" y="495.372">+lookup_cookie(): Soup.Cookie</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="721.498" y="201.992" width="225.6" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="721.498" y="201.992" width="225.6" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="834.298" y="220.992">Response</text>
-    <rect style="fill: #ffffff" x="721.498" y="229.992" width="225.6" height="52"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="721.498" y="229.992" width="225.6" height="52"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="724.498" y="243.992">+status: uint</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="724.498" y="259.992">+headers: Soup.MessageHeader</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="724.498" y="275.992">+cookies: SList&lt;Soup.Cookie&gt;</text>
-    <rect style="fill: #ffffff" x="721.498" y="281.992" width="225.6" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="721.498" y="281.992" width="225.6" height="8"/>
+    <rect style="fill: #ffffff" x="753.889" y="383.206" width="225.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="753.889" y="383.206" width="225.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="866.689" y="402.206">Response</text>
+    <rect style="fill: #ffffff" x="753.889" y="411.206" width="225.6" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="753.889" y="411.206" width="225.6" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="756.889" y="425.206">+status: uint</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="756.889" y="441.206">+headers: Soup.MessageHeader</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="756.889" y="457.206">+cookies: SList&lt;Soup.Cookie&gt;</text>
+    <rect style="fill: #ffffff" x="753.889" y="463.206" width="225.6" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="753.889" y="463.206" width="225.6" height="8"/>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="171.338" y="-43.5814" width="79.3" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="171.338" y="-43.5814" width="79.3" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="210.988" y="-24.5814">Server</text>
-    <rect style="fill: #ffffff" x="171.338" y="-15.5814" width="79.3" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="171.338" y="-15.5814" width="79.3" height="8"/>
-    <rect style="fill: #ffffff" x="171.338" y="-7.5814" width="79.3" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="171.338" y="-7.5814" width="79.3" height="20"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="174.338" y="6.4186">+listen()</text>
+    <rect style="fill: #ffffff" x="552.067" y="82.3028" width="348.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="552.067" y="82.3028" width="348.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="726.467" y="101.303">Server</text>
+    <rect style="fill: #ffffff" x="552.067" y="110.303" width="348.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="552.067" y="110.303" width="348.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="555.067" y="124.303">-handle: ApplicationCallback</text>
+    <rect style="fill: #ffffff" x="552.067" y="130.303" width="348.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="552.067" y="130.303" width="348.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="555.067" y="144.303">+dispatch(request:Request,response:Response)</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="995.536" y="-43.5814" width="333.4" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="995.536" y="-43.5814" width="333.4" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="1162.24" y="-24.5814">Application</text>
-    <rect style="fill: #ffffff" x="995.536" y="-15.5814" width="333.4" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="995.536" y="-15.5814" width="333.4" height="8"/>
-    <rect style="fill: #ffffff" x="995.536" y="-7.5814" width="333.4" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="995.536" y="-7.5814" width="333.4" height="20"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="998.536" y="6.4186">+handle(request:Request,response:Response)</text>
+    <rect style="fill: #ffffff" x="629.067" y="-98.5373" width="194.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="629.067" y="-98.5373" width="194.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="726.467" y="-79.5373">GLib.Application</text>
+    <rect style="fill: #ffffff" x="629.067" y="-70.5373" width="194.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="629.067" y="-70.5373" width="194.8" height="8"/>
+    <rect style="fill: #ffffff" x="629.067" y="-62.5373" width="194.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="629.067" y="-62.5373" width="194.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="632.067" y="-48.5373">+run(args:string[]): int</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="937.786" y="425.604" width="448.9" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="937.786" y="425.604" width="448.9" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1162.24" y="444.604">Router</text>
-    <rect style="fill: #ffffff" x="937.786" y="453.604" width="448.9" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="937.786" y="453.604" width="448.9" height="20"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="467.604">+types: HashTable&lt;string, string&gt;</text>
-    <rect style="fill: #ffffff" x="937.786" y="473.604" width="448.9" height="164"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="937.786" y="473.604" width="448.9" height="164"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="487.604">+get(rule:String,callback:RouteCallback)</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="503.604">+post(rule:String,callback:RouteCallback)</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="519.604">+put(rule:String,callback:RouteCallback)</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="535.604">+delete(rule:String,callback:RouteCallback)</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="551.604">+method(method:string,rule:string,callback:RouteCallback)</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="567.604">+regex(method:string,regex:Regex,callback:RouteCallback)</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="583.604">+matcher(method:string,matcher:RequestMatcher,</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="599.604">         callback:RouteCallback)</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="615.604">+route(method:string,route:Route)</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="940.786" y="631.604">+scope(fragment:string,inner:NestedRouter)</text>
+    <rect style="fill: #ffffff" x="974.699" y="-93.7068" width="456.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="974.699" y="-93.7068" width="456.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1203" y="-74.7068">Router</text>
+    <rect style="fill: #ffffff" x="974.699" y="-65.7068" width="456.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="974.699" y="-65.7068" width="456.6" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="-51.7068">+types: HashTable&lt;string, string&gt;</text>
+    <rect style="fill: #ffffff" x="974.699" y="-45.7068" width="456.6" height="228"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="974.699" y="-45.7068" width="456.6" height="228"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="-31.7068">+get(rule:String,callback:HandlerCallback)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="-15.7068">+post(rule:String,callback:HandlerCallback)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="0.293224">+put(rule:String,callback:HandlerCallback)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="16.2932">+delete(rule:String,callback:HandlerCallback)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="32.2932">+rule(method:Method,rule:string,callback:HandlerCallback)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="48.2932">+regex(method:Method,regex:Regex,callback:HandlerCallback)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="64.2932">+matcher(method:Method,matcher:RequestMatcher,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="80.2932">         callback:RouteCallback)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="96.2932">+route(method:Method,route:Route)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="112.293">+scope(fragment:string,inner:NestedRouter)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="128.293">+status(status:uint,HandlerCallback:callback)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="144.293">+invoke(request:Request,response:Response,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="160.293">        next:NextCallback)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="977.699" y="176.293">+handle(request:Request,response:Response)</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="153.41" y="525.244" width="114.8" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="153.41" y="525.244" width="114.8" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="210.81" y="544.244">SoupServer</text>
-    <rect style="fill: #ffffff" x="153.41" y="553.244" width="114.8" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="153.41" y="553.244" width="114.8" height="8"/>
-    <rect style="fill: #ffffff" x="153.41" y="561.244" width="114.8" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="153.41" y="561.244" width="114.8" height="8"/>
+    <rect style="fill: #ffffff" x="644.467" y="284.346" width="164" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="644.467" y="284.346" width="164" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="726.467" y="303.346">SoupServer</text>
+    <rect style="fill: #ffffff" x="644.467" y="312.346" width="164" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="644.467" y="312.346" width="164" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="647.467" y="326.346">+server: Soup.Server</text>
+    <rect style="fill: #ffffff" x="644.467" y="332.346" width="164" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="644.467" y="332.346" width="164" height="8"/>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="210.988,31.6617 210.988,276.832 210.81,276.832 210.81,524.238 "/>
-    <polygon style="fill: #ffffff" points="218.988,31.6617 210.988,15.6617 202.988,31.6617 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="218.988,31.6617 210.988,15.6617 202.988,31.6617 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="726.467,169.547 726.467,168.311 726.467,282.339 726.467,283.339 "/>
+    <polygon style="fill: #ffffff" points="734.467,169.547 726.467,153.547 718.467,169.547 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="734.467,169.547 726.467,153.547 718.467,169.547 "/>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="326.404" y="495.604" width="318" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="326.404" y="495.604" width="318" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="485.404" y="514.604">Route</text>
-    <rect style="fill: #ffffff" x="326.404" y="523.604" width="318" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="326.404" y="523.604" width="318" height="8"/>
-    <rect style="fill: #ffffff" x="326.404" y="531.604" width="318" height="36"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="326.404" y="531.604" width="318" height="36"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329.404" y="545.604">+match(request:Request)</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329.404" y="561.604">+fire(request:Request,response:Response)</text>
+    <rect style="fill: #ffffff" x="1022.21" y="224.7" width="318" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1022.21" y="224.7" width="318" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="1181.21" y="243.7">Route</text>
+    <rect style="fill: #ffffff" x="1022.21" y="252.7" width="318" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1022.21" y="252.7" width="318" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1025.21" y="266.7">+method: Method</text>
+    <rect style="fill: #ffffff" x="1022.21" y="272.7" width="318" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1022.21" y="272.7" width="318" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1025.21" y="286.7">+match(request:Request,context:Context)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1025.21" y="302.7">+fire(request:Request,response:Response,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1025.21" y="318.7">      next:NextCallback,context:Context)</text>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="911.614,531.604 734.442,531.604 734.442,531.604 645.408,531.604 "/>
-    <polygon style="fill: #000000" points="936.785,531.604 922.785,536.404 908.785,531.604 922.785,526.804 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="936.785,531.604 922.785,536.404 908.785,531.604 922.785,526.804 "/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="734.442" y="528.604"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="904.785" y="528.604"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="649.408" y="528.604">0..n</text>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1366.38,274.7 1522.15,274.7 1522.15,44.2932 1432.27,44.2932 "/>
+    <polygon style="fill: #000000" points="1341.2,274.7 1355.2,269.9 1369.2,274.7 1355.2,279.5 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1341.2,274.7 1355.2,269.9 1369.2,274.7 1355.2,279.5 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1524.15" y="156.496"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1373.2" y="271.7"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1436.27" y="41.2932">0..n</text>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1162.24,31.6617 1162.24,30.4257 1162.24,423.597 1162.24,424.597 "/>
-    <polygon style="fill: #ffffff" points="1170.24,31.6617 1162.24,15.6617 1154.24,31.6617 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1170.24,31.6617 1162.24,15.6617 1154.24,31.6617 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="726.467,-23.2941 726.467,-24.5302 726.467,80.2943 726.467,81.2943 "/>
+    <polygon style="fill: #ffffff" points="734.467,-23.2941 726.467,-39.2941 718.467,-23.2941 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="734.467,-23.2941 726.467,-39.2941 718.467,-23.2941 "/>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="362.852" y="412.582" width="129.35" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="362.852" y="412.582" width="129.35" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="427.527" y="431.582">SoupRequest</text>
-    <rect style="fill: #ffffff" x="362.852" y="440.582" width="129.35" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="362.852" y="440.582" width="129.35" height="8"/>
-    <rect style="fill: #ffffff" x="362.852" y="448.582" width="129.35" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="362.852" y="448.582" width="129.35" height="8"/>
+    <rect style="fill: #ffffff" x="298.449" y="590.285" width="129.35" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="298.449" y="590.285" width="129.35" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="363.124" y="609.285">SoupRequest</text>
+    <rect style="fill: #ffffff" x="298.449" y="618.285" width="129.35" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="298.449" y="618.285" width="129.35" height="8"/>
+    <rect style="fill: #ffffff" x="298.449" y="626.285" width="129.35" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="298.449" y="626.285" width="129.35" height="8"/>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="763.198" y="412.582" width="142.2" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="763.198" y="412.582" width="142.2" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="834.298" y="431.582">SoupResponse</text>
-    <rect style="fill: #ffffff" x="763.198" y="440.582" width="142.2" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="763.198" y="440.582" width="142.2" height="8"/>
-    <rect style="fill: #ffffff" x="763.198" y="448.582" width="142.2" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="763.198" y="448.582" width="142.2" height="8"/>
+    <rect style="fill: #ffffff" x="795.589" y="590.285" width="142.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="795.589" y="590.285" width="142.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="866.689" y="609.285">SoupResponse</text>
+    <rect style="fill: #ffffff" x="795.589" y="618.285" width="142.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="795.589" y="618.285" width="142.2" height="8"/>
+    <rect style="fill: #ffffff" x="795.589" y="626.285" width="142.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="795.589" y="626.285" width="142.2" height="8"/>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="427.526,325.236 427.526,367.288 427.527,367.288 427.527,411.576 "/>
-    <polygon style="fill: #ffffff" points="435.526,325.236 427.526,309.236 419.526,325.236 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="435.526,325.236 427.526,309.236 419.526,325.236 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="363.943,520.617 363.943,553.831 363.124,553.831 363.124,589.28 "/>
+    <polygon style="fill: #ffffff" points="371.943,520.617 363.943,504.617 355.943,520.617 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="371.943,520.617 363.943,504.617 355.943,520.617 "/>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="834.298,309.234 834.298,307.998 834.298,410.576 834.298,411.576 "/>
-    <polygon style="fill: #ffffff" points="842.298,309.234 834.298,293.234 826.298,309.234 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="842.298,309.234 834.298,293.234 826.298,309.234 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="866.689,490.448 866.689,489.212 866.689,588.28 866.689,589.28 "/>
+    <polygon style="fill: #ffffff" points="874.689,490.448 866.689,474.448 858.689,490.448 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="874.689,490.448 866.689,474.448 858.689,490.448 "/>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="276.803,-15.5814 506.098,-15.5814 506.098,-15.5814 994.597,-15.5814 "/>
-    <polygon style="fill: #000000" points="251.632,-15.5814 265.632,-20.3814 279.632,-15.5814 265.632,-10.7814 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="251.632,-15.5814 265.632,-20.3814 279.632,-15.5814 265.632,-10.7814 "/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="506.098" y="-18.5814"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283.632" y="-18.5814"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="990.597" y="-18.5814"> 1</text>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="990.597" y="-2.5814">sert</text>
+    <rect style="fill: #ffffff" x="1126.06" y="584.285" width="110.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1126.06" y="584.285" width="110.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1181.11" y="603.285">RuleRoute</text>
+    <rect style="fill: #ffffff" x="1126.06" y="612.285" width="110.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1126.06" y="612.285" width="110.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1129.06" y="626.285">+rule: string</text>
+    <rect style="fill: #ffffff" x="1126.06" y="632.285" width="110.1" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1126.06" y="632.285" width="110.1" height="8"/>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="365.926" y="33" width="123.2" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="365.926" y="33" width="123.2" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="427.526" y="52">InputStream</text>
-    <rect style="fill: #ffffff" x="365.926" y="61" width="123.2" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="365.926" y="61" width="123.2" height="8"/>
-    <rect style="fill: #ffffff" x="365.926" y="69" width="123.2" height="36"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="365.926" y="69" width="123.2" height="36"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="368.926" y="83">+read()</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="368.926" y="99">+close()</text>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1181.21,343.942 1181.21,369.953 1181.11,369.953 1181.11,398.199 "/>
+    <polygon style="fill: #ffffff" points="1189.21,343.942 1181.21,327.942 1173.21,343.942 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1189.21,343.942 1181.21,327.942 1173.21,343.942 "/>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="765.048" y="33" width="138.5" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="765.048" y="33" width="138.5" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="834.298" y="52">OutputStream</text>
-    <rect style="fill: #ffffff" x="765.048" y="61" width="138.5" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="765.048" y="61" width="138.5" height="8"/>
-    <rect style="fill: #ffffff" x="765.048" y="69" width="138.5" height="36"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="765.048" y="69" width="138.5" height="36"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="768.048" y="83">+write()</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="768.048" y="99">+close()</text>
+    <rect style="fill: #ffffff" x="1121.64" y="399.206" width="118.95" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1121.64" y="399.206" width="118.95" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1181.11" y="418.206">RegexRoute</text>
+    <rect style="fill: #ffffff" x="1121.64" y="427.206" width="118.95" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1121.64" y="427.206" width="118.95" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1124.64" y="441.206">+regex: Regex</text>
+    <rect style="fill: #ffffff" x="1121.64" y="447.206" width="118.95" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1121.64" y="447.206" width="118.95" height="8"/>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="427.526,124.245 427.526,123.009 427.526,183.985 427.526,184.985 "/>
-    <polygon style="fill: #ffffff" points="435.526,124.245 427.526,108.245 419.526,124.245 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="435.526,124.245 427.526,108.245 419.526,124.245 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1181.11,474.449 1181.11,473.213 1181.11,582.278 1181.11,583.278 "/>
+    <polygon style="fill: #ffffff" points="1189.11,474.449 1181.11,458.449 1173.11,474.449 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1189.11,474.449 1181.11,458.449 1173.11,474.449 "/>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="834.298,124.245 834.298,123.009 834.298,199.987 834.298,200.987 "/>
-    <polygon style="fill: #ffffff" points="842.298,124.245 834.298,108.245 826.298,124.245 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="842.298,124.245 834.298,108.245 826.298,124.245 "/>
+    <rect style="fill: #ffffff" x="307.399" y="94.3028" width="111.45" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="307.399" y="94.3028" width="111.45" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="363.124" y="113.303">Connection</text>
+    <rect style="fill: #ffffff" x="307.399" y="122.303" width="111.45" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="307.399" y="122.303" width="111.45" height="8"/>
+    <rect style="fill: #ffffff" x="307.399" y="130.303" width="111.45" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="307.399" y="130.303" width="111.45" height="8"/>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="695.319,245.992 705.491,245.992 596.231,245.992 595.231,245.992 "/>
-    <polygon style="fill: #000000" points="720.491,245.992 706.491,250.792 692.491,245.992 706.491,241.192 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="720.491,245.992 706.491,250.792 692.491,245.992 706.491,241.192 "/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="599.231" y="242.992"> 1</text>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="599.231" y="258.992">répond à</text>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="363.124,164.48 363.124,252.836 363.943,252.836 363.943,352.363 "/>
+    <polygon style="fill: #ffffff" points="363.124,139.308 367.924,153.308 363.124,167.308 358.324,153.308 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="363.124,139.308 367.924,153.308 363.124,167.308 358.324,153.308 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="292.474" y="-92.4591" width="141.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="292.474" y="-92.4591" width="141.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="363.124" y="-73.4591">GLib.IOStream</text>
+    <rect style="fill: #ffffff" x="292.474" y="-64.4591" width="141.3" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="292.474" y="-64.4591" width="141.3" height="8"/>
+    <rect style="fill: #ffffff" x="292.474" y="-56.4591" width="141.3" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="292.474" y="-56.4591" width="141.3" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="363.124,-29.2174 363.124,-30.4535 363.124,92.2972 363.124,93.2972 "/>
+    <polygon style="fill: #ffffff" points="371.124,-29.2174 363.124,-45.2174 355.124,-29.2174 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="371.124,-29.2174 363.124,-45.2174 355.124,-29.2174 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="948.52,44.2932 930.782,44.2932 930.782,116.303 901.873,116.303 "/>
+    <polygon style="fill: #ffffff" points="973.692,44.2932 959.692,49.0932 945.692,44.2932 959.692,39.4932 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="973.692,44.2932 959.692,49.0932 945.692,44.2932 959.692,39.4932 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="549.124,427.372 645.417,427.372 645.417,427.206 752.882,427.206 "/>
+    <polygon style="fill: #ffffff" points="523.953,427.372 537.953,422.572 551.953,427.372 537.953,432.172 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="523.953,427.372 537.953,422.572 551.953,427.372 537.953,432.172 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="419.856,116.303 420.856,116.303 550.062,116.303 551.062,116.303 "/>
+    <polygon style="fill: #000000" points="487.459,116.303 487.459,108.303 495.459,112.303 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="423.856" y="113.303">0..n</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="547.062" y="113.303">1</text>
   </g>
 </svg>
