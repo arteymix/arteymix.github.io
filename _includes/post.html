@@ -1,19 +1,21 @@
 <article class="post">
-  <h2 class="post-title">
-    {% if include.post.external-url %}
-      <a href="{{ include.post.external-url }}">{{ include.post.title }}</a>
-      <a class="anchor" href="{{ include.post.url }}"><i class="glyphicon glyphicon-leaf"></i></a>
-    {% else %}
-      <a href="{{ include.post.url }}">{{ include.post.title }}</a>
-    {% endif %}
-    {% if include.post.categories.size > 0 %}
-      <small>in <a href="/{{ include.post.categories | join '/' }}">{{ include.post.categories | last | capitalize }}</a></small>
-    {% endif %}
-  </h2>
+  <header>
+    <h2 class="post-title">
+      {% if include.post.external-url %}
+        <a href="{{ include.post.external-url }}">{{ include.post.title }}</a>
+        <a class="anchor" href="{{ include.post.url }}"><i class="glyphicon glyphicon-leaf"></i></a>
+      {% else %}
+        <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+      {% endif %}
+      {% if include.post.categories.size > 0 %}
+        <small>in <a href="/{{ include.post.categories | join '/' }}">{{ include.post.categories | last | capitalize }}</a></small>
+      {% endif %}
+    </h2>
+  </header>
   <div class="post-content">
     {{ include.content }}
   </div>
-  <div class="post-footer">
+  <footer class="post-footer">
     <p>
       <small>
         Posted on <time datetime="{{ include.post.date | date: "%FT%R" }}">{{ include.post.date | date: "%b %d, %Y"}}</time>
@@ -22,5 +24,5 @@
         {% endif %}
       </small>
     </p>
-  </div>
+  </footer>
 </article>
