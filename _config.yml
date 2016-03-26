@@ -11,3 +11,4 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-seo-tag

@@ -2,22 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ page.description }}">
-    <meta name="keywords" content="{{ page.keywords }}">
-    <meta name="author" content="{{ site.author }}">
     <meta name="viewport" content="width=device-width">
-    <meta name="canonical" content="https://arteymix.github.io{{ page.url }}">
+
+    {% seo %}
 
     <link rel="author" href="/about">
     <link rel="shortcut icon" href="/assets/img/glyphicon-leaf.png">
-
-    <!-- OpenGraph http://ogp.me/ -->
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.description }}">
-    <meta property="og:image" content="https://gravatar.com/avatar/f74142e4e76004b644fc0538350e1b6b?s=128">
-    <meta property="og:url" content="https://arteymix.github.io{{ page.url }}">
-
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/assets/css/style.min.css">
