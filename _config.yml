@@ -1,7 +1,7 @@
 name: A day in a pile of work
 url: https://arteymix.github.io
 author: Guillaume Poirier-Morency <guillaumepoiriermorency@gmail.com>
-description: My personal web development blog
+description: My personal Web development blog
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'Makefile']
 
@@ -12,3 +12,4 @@ gems:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-mentions
