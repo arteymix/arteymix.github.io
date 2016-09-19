@@ -18,9 +18,9 @@
   <footer class="post-footer">
     <p>
       <small>
-        Posted on <time datetime="{{ include.post.date | date: "%FT%R" }}">{{ include.post.date | date: "%b %d, %Y"}}</time>
+        Posted on <time datetime="{{ include.post.date | date: "%FT%R" }}">{{ include.post.date | date: "%b %d, %Y"}}</time>{% if include.post.tags.size == 0 %}.{% endif %}
         {% if include.post.tags.size > 0 %}
-          and tagged with {{ include.post.tags | array_to_sentence_string }}
+          and tagged with {{ include.post.tags | array_to_sentence_string }}.
         {% endif %}
       </small>
     </p>
