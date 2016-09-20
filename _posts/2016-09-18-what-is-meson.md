@@ -76,7 +76,7 @@ a wall eventually.
 
 There's also the Python question. It requires at least 3.4. This is becoming
 less an problematic as old distributions progressively die out, but still can
-prevent you now.
+prevent you now. Here's a few ideas to remedy this problem:
 
  - build a dependency-free zipball (see [issue #588][3])
  - backport Meson to older Python version
