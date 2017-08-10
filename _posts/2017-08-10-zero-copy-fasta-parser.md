@@ -74,7 +74,14 @@ for a random subsequence of length 7 of landing on a newline is thus
 approximately 8.75%.
 
 For the great majority of cases, assuming uniformly distributed subsequence
-requests, we can simply return the address form the mapped memory.
+requests, we can simply return the address from the mapped memory.
+
+From now on, we assume that the in-memory mapped document has already been
+indexed by bookeeping the beginnings of each sequences, which can be easily
+done with `memchr`[^memchr]. The `sequence` pointer points to some start of
+a sequence and `sequence_len` indicate the length before the next one.
+
+[^memchr]: [http://man7.org/linux/man-pages/man3/memchr.3.html](http://man7.org/linux/man-pages/man3/memchr.3.html)
 
 To work efficiently, it is worth to index the newlines. For this purpose, we
 use a `GPtrArray`, which is a simple pointer array implementation that we
