@@ -16,7 +16,8 @@ available resources such as CPU time.
 To address this kind of issue, I'll describe in this post a strategy using
 memory-mapped files and on-demand processing over a very common data format in
 bioinformatics: FASTA. The use case is pretty simple: we want to query small
-and arbitrary subsequences without having to precondition them.
+and arbitrary subsequences without having to precondition them in allocated
+memory.
 
 ### About Virtual Memory Space
 
