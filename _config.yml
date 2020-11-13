@@ -3,7 +3,7 @@ url: https://arteymix.github.io
 author: Guillaume Poirier-Morency <guillaumepoiriermorency@gmail.com>
 description: My personal Web development blog
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'Makefile']
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'Makefile', 'vendor']
 
 paginate: 10
 
