@@ -7,6 +7,10 @@ Currently, I work as a Bioinformatics Analyst at the Michael Smith Laboratories
 (UBC) with Paul Pavlidis. I also offer consulting services on various topics
 such as software development, bioinformatics, mathematical modelling, etc.
 
+I offer tailored technical and scientific consulting services covering a broad
+range of topics in bioinformatics, computer science and mathematical modelling.
+[Learn more about all this...](/consulting)
+
 I graduated in Computer Science at [Université de Montréal](http://www.umontreal.ca)
 and worked at [IRIC](http://iric.ca/) under François Major. You might want to
 sneak a peek at my [_curiculum vitae_](/curiculum-vitae-en.pdf)
