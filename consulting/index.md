@@ -3,12 +3,13 @@ layout: page
 title: Scientific and Technical Consulting
 ---
 
-You can reach me to consult on a variety of subjects including bioinformatics,
-software programming, and mathematical modelling. I operate in Vancouver BC.
+I offer consulting on a variety of subjects including bioinformatics, software
+programming, and mathematical modelling. I operate in Vancouver BC for in-person
+meetings.
 
 I am well versed in C, Python and Java programming languages, data sciences,
-statistics, web programming, and other useful skills to move on from a
-challenging problem to a working solution.
+statistics, web programming, and other useful skills turn challenging problems
+into working solutions.
 
 Few highlights:
 
@@ -21,5 +22,4 @@ Few highlights:
  - Cloud computing solution that require no physical infrastructure (Google
    Cloud Platform, AWS)
 
-The best way to reach me is via my personal email -- it's in the sidebar.
-
+The best way to reach out is at [sales@poirigui.consulting](mailto:sales@poirigui.consulting).
