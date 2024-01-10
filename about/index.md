@@ -13,8 +13,7 @@ range of topics in bioinformatics, computer science and mathematical modelling.
 
 I graduated in Computer Science at [Université de Montréal](http://www.umontreal.ca)
 and worked at [IRIC](http://iric.ca/) under François Major. You might want to
-sneak a peek at my [_curiculum vitae_](/curiculum-vitae-en.pdf)
-(or [in french](/curiculum-vitae.pdf) if you prefer).
+take a look at my [_curiculum vitae_](/curiculum-vitae-en.pdf).
 
 This blog essentially treat of Web development, Vala programming for GNOME and
 some day-to-day tools for academics.
