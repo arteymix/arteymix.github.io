@@ -275,8 +275,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  github-pages (= 232)
-  webrick
+  github-pages
 
 BUNDLED WITH
    2.5.22
