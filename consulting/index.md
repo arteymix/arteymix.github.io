@@ -8,7 +8,7 @@ programming, and mathematical modelling. I operate in Vancouver BC for in-person
 meetings.
 
 I am well versed in C, Python and Java programming languages, data sciences,
-statistics, web programming, and other useful skills turn challenging problems
+statistics, Web programming, and other useful skills turn challenging problems
 into working solutions.
 
 Few highlights:
@@ -22,4 +22,4 @@ Few highlights:
  - Cloud computing solution that require no physical infrastructure (Google
    Cloud Platform, AWS)
 
-The best way to reach out is at [sales@poirigui.consulting](mailto:sales@poirigui.consulting).
+The best way to reach out is at [guillaumepoiriermorency@gmail.com](mailto:guillaumepoiriermorency@gmail.com?subject=Consulting Inquiry).
