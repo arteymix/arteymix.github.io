@@ -22,4 +22,4 @@ Few highlights:
  - Cloud computing solution that require no physical infrastructure (Google
    Cloud Platform, AWS)
 
-The best way to reach out is at [guillaumepoiriermorency@gmail.com](mailto:guillaumepoiriermorency@gmail.com?subject=Consulting Inquiry).
+The best way to reach out is at [guillaumepoiriermorency+consulting@gmail.com](mailto:guillaumepoiriermorency+consulting@gmail.com?subject=Consulting Inquiry).
